@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import "./App.css";
-import Header from "./global/Header/Header";
+// import Header from "./global/Header/Header";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { AppContext } from "./context/AppContext/AppContext";
 import "react-loading-skeleton/dist/skeleton.css";
-import Index from "./scenes/Index/Index";
+// import Index from "./scenes/Index/Index";
 
 function App() {
   // State that block scrollbar
