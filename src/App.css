@@ -1,42 +1,1891 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+.app_container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #070a11; }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Page Scroll-bar */
+::-webkit-scrollbar {
+  width: 10px; }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+::-webkit-scrollbar-track {
+  background: #e0e0e0; }
+
+::-webkit-scrollbar-thumb {
+  background: #237522; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; }
+
+.container-profile_photo {
+  border-radius: 50%;
+  border: 3px solid white;
+  overflow: hidden;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; }
+  .container-profile_photo .modal-profile_photo {
+    width: 100%;
+    height: 100%; }
+
+.profile_image {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  left: 0;
+  border: 4px solid #fff;
+  background-color: white;
+  cursor: pointer;
+  object-fit: cover; }
+  .profile_image .p-i-loading_skeleton {
+    width: 100%;
+    height: 100%; }
+  .profile_image .profile-image_resource {
+    height: 100%;
+    width: 100%; }
+
+.links_container {
+  position: absolute;
+  top: 8px;
+  right: 0px;
+  display: flex; }
+  .links_container ul {
+    display: flex; }
+    .links_container ul .item-link {
+      width: 24px;
+      list-style: none;
+      margin-left: 8px; }
+      .links_container ul .item-link a {
+        width: 100%;
+        height: 100%;
+        display: flex; }
+        .links_container ul .item-link a svg {
+          width: 100%;
+          height: auto; }
+          .links_container ul .item-link a svg .st0 {
+            fill: #237522; }
+
+@media (max-width: 425px) {
+  .text_container {
+    height: 125px; } }
+
+@media (max-width: 375px) {
+  .text_container {
+    height: 132px; } }
+
+@media (max-width: 320px) {
+  .text_container {
+    height: 153px; } }
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .text_container {
+    height: 97px; } }
+
+@media (min-width: 769px) {
+  .text_container {
+    height: 110px; } }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .text_container {
+    height: 112px; } }
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0; }
+  .text_container .text-1_container h3,
+  .text_container .text-2_container h3 {
+    font-family: "Anek Malayalam", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #37353b; }
+  .text_container .text-1_container {
+    margin-bottom: 8px;
+    display: flex; }
+  .text_container .text-2_container h3 {
+    line-height: 20px; }
+
+.flags_container {
+  width: fit-content; }
+  .flags_container ul {
+    display: flex; }
+    .flags_container ul .flags {
+      margin-right: 16px;
+      list-style-type: none;
+      display: flex;
+      align-items: flex-end; }
+      .flags_container ul .flags .icon {
+        height: 100%;
+        width: 14px;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .flags_container ul .flags .icon svg {
+          height: auto;
+          width: 100%; }
+          .flags_container ul .flags .icon svg .st0 {
+            fill: #237522; }
+      .flags_container ul .flags h3 {
+        font-family: "Anek Malayalam", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 14px;
+        font-weight: 500;
+        height: 88%;
+        color: #37353b;
+        display: flex; }
+
+@media (max-width: 425px) {
+  .contact_container .contact_content {
+    width: 87%; }
+    .contact_container .contact_content .calltoaction-text h4 {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 12px;
+      font-weight: 400; }
+    .contact_container .contact_content .nospam-text h4 {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 12px;
+      font-weight: 400;
+      text-align: center; } }
+
+@media (max-width: 375px) {
+  .contact_container .contact_content {
+    width: 85%; } }
+
+@media (max-width: 320px) {
+  .contact_container .contact_content {
+    width: 85%; }
+    .contact_container .contact_content .calltoaction-text h4 {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 10px;
+      font-weight: 400; }
+    .contact_container .contact_content .nospam-text h4 {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 10px;
+      font-weight: 400; } }
+
+@media (min-width: 476px) {
+  .contact_container .contact_content {
+    width: 73%; }
+    .contact_container .contact_content .calltoaction-text h4 {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 12px;
+      font-weight: 500; }
+    .contact_container .contact_content .nospam-text h4 {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 12px;
+      font-weight: 400; } }
+
+@media (min-width: 769px) {
+  .contact_container .contact_content {
+    width: 68%; } }
+
+.contact_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 0 0; }
+  .contact_container .contact_content {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: center; }
+    .contact_container .contact_content .calltoaction-text,
+    .contact_container .contact_content .nospam-text {
+      display: flex;
+      justify-content: center; }
+      .contact_container .contact_content .calltoaction-text h4,
+      .contact_container .contact_content .nospam-text h4 {
+        text-align: center;
+        width: fit-content;
+        color: #37353b; }
+    .contact_container .contact_content .calltoaction-text {
+      margin-bottom: 6px; }
+    .contact_container .contact_content .nospam-text h4 {
+      text-align: center; }
+    .contact_container .contact_content .input_container {
+      display: flex;
+      width: 100%;
+      height: 37px;
+      border-radius: 9px;
+      overflow: hidden;
+      border: 1px solid #237522;
+      margin-bottom: 6px; }
+      .contact_container .contact_content .input_container .email_input,
+      .contact_container .contact_content .input_container .submit_btn {
+        height: 100%;
+        border: none;
+        outline: none; }
+      .contact_container .contact_content .input_container .email_input {
+        width: 90%;
+        padding-left: 10px;
+        font-family: "Anek Malayalam", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 14px;
+        font-weight: 400;
+        color: #37353b; }
+      .contact_container .contact_content .input_container .submit_btn {
+        width: 10%;
+        padding: 0;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer; }
+        .contact_container .contact_content .input_container .submit_btn svg {
+          width: 50%;
+          height: auto; }
+          .contact_container .contact_content .input_container .submit_btn svg .st0 {
+            fill: #237522; }
+
+.data-profile_container {
+  width: 90%; }
+  .data-profile_container .profile_content-1 {
+    height: 40px;
+    width: 100%;
+    position: relative; }
+  .data-profile_container .profile_content-2 {
+    width: fit-content;
+    padding: 14px 0 0; }
+    .data-profile_container .profile_content-2 .name_container {
+      height: 34px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 30px;
+      font-weight: 400;
+      color: #2b292f; }
+
+@media (max-width: 425px) {
+  .feed_container .title_container ul {
+    overflow-x: scroll; }
+    .feed_container .title_container ul::-webkit-scrollbar {
+      display: none; } }
+
+@media (min-width: 769px) {
+  .post_container:hover {
+    background-color: rgba(172, 172, 172, 0.151); } }
+
+.pinned_container {
+  width: fit-content;
+  padding-left: 40px;
+  margin: 0 0 15px 0; }
+  .pinned_container .pinned_content {
+    display: flex; }
+    .pinned_container .pinned_content .pinned_icon,
+    .pinned_container .pinned_content .pinned_text {
+      display: flex;
+      align-items: center; }
+    .pinned_container .pinned_content .pinned_icon {
+      justify-content: center;
+      margin-right: 8px; }
+      .pinned_container .pinned_content .pinned_icon svg .st0 {
+        fill: #37353b; }
+    .pinned_container .pinned_content .pinned_text .p_text {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 12px;
+      font-weight: 400;
+      color: #37353b; }
+
+.post-flag_content {
+  margin-right: 5px;
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  list-style: none;
+  padding: 0 2px;
+  border-radius: 4px; }
+  .post-flag_content .emoji_container,
+  .post-flag_content .flag-title_container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .post-flag_content .emoji_container {
+    width: 30px; }
+  .post-flag_content .flag-title-container {
+    width: 75%; }
+    .post-flag_content .flag-title-container .flag_title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 12px;
+      font-weight: 400; }
+
+.post-flags_container {
+  width: 100%;
+  height: 24px;
+  margin: 7px 0; }
+  .post-flags_container ul {
+    height: 100%;
+    display: flex; }
+
+.photo_container {
+  width: 100%;
+  object-fit: cover; }
+  .photo_container img {
+    width: 100%;
+    height: 100%; }
+
+.post_title {
+  width: 100%;
+  display: flex; }
+  .post_title .p_title {
+    font-family: "Anek Malayalam", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #2b292f; }
+
+.post-content_container {
+  width: 100%;
+  margin: 8px 0 12px 0; }
+  .post-content_container .post-text_content {
+    width: 100%;
+    font-family: "Anek Malayalam", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 400;
+    color: #37353b;
+    line-height: 20px; }
+
+.bottom-btn_container {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .bottom-btn_container .like-btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px; }
+    .bottom-btn_container .like-btn_container .like_btn {
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      border-radius: 50%;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .bottom-btn_container .like-btn_container .like_btn svg {
+        width: 90%; }
+      .bottom-btn_container .like-btn_container .like_btn .heart_filled {
+        fill: red; }
+      .bottom-btn_container .like-btn_container .like_btn .heart_stroked {
+        fill: red; }
+    .bottom-btn_container .like-btn_container .like_label {
+      width: fit-content;
+      padding: 0 4px;
+      height: fit-content;
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 12px;
+      font-weight: 400;
+      color: #37353b; }
+  .bottom-btn_container .share-btn_container .share_btn {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    cursor: pointer; }
+    .bottom-btn_container .share-btn_container .share_btn .st0 {
+      width: 45%;
+      fill: #237522; }
+
+.post_container {
+  list-style: none;
+  padding: 10px 0; }
+  .post_container .post_content {
+    display: flex;
+    justify-content: center; }
+    .post_container .post_content .profile-image_container,
+    .post_container .post_content .post-data_container {
+      height: 100%; }
+    .post_container .post_content .profile-image_container {
+      width: 12%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      .post_container .post_content .profile-image_container .image_container {
+        width: 77%;
+        height: auto;
+        border-radius: 50%;
+        object-fit: cover;
+        overflow: hidden;
+        display: flex; }
+        .post_container .post_content .profile-image_container .image_container img {
+          width: 100%;
+          height: 100%; }
+    .post_container .post_content .post-data_container {
+      width: 78%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .post_container .post_content .post-data_container .title_container,
+      .post_container .post_content .post-data_container .post-data_content {
+        width: 98%; }
+      .post_container .post_content .post-data_container .title_container {
+        height: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start; }
+        .post_container .post_content .post-data_container .title_container .name_container,
+        .post_container .post_content .post-data_container .title_container .separator_container,
+        .post_container .post_content .post-data_container .title_container .post-date_container {
+          height: 100%;
+          display: flex;
+          align-items: center; }
+        .post_container .post_content .post-data_container .title_container .name_container {
+          padding-right: 4px; }
+          .post_container .post_content .post-data_container .title_container .name_container .name_content {
+            font-family: "Anek Malayalam", sans-serif;
+            font-optical-sizing: auto;
+            font-size: 16px;
+            font-weight: 400;
+            color: #2b292f; }
+        .post_container .post_content .post-data_container .title_container .separator_container {
+          margin-right: 4px; }
+          .post_container .post_content .post-data_container .title_container .separator_container .separator_icon {
+            width: 10px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .post_container .post_content .post-data_container .title_container .separator_container .separator_icon svg {
+              width: 5px;
+              height: auto; }
+              .post_container .post_content .post-data_container .title_container .separator_container .separator_icon svg .st0 {
+                fill: #2b292f; }
+        .post_container .post_content .post-data_container .title_container .post-date_container .date_content {
+          font-family: "Anek Malayalam", sans-serif;
+          font-optical-sizing: auto;
+          font-size: 12px;
+          font-weight: 400;
+          color: #2b292f;
+          height: 90%;
+          display: flex;
+          align-items: flex-end; }
+      .post_container .post_content .post-data_container .post-data_content {
+        display: flex;
+        flex-direction: column;
+        margin: 8px 0;
+        width: 100%; }
+
+.feed_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .feed_container .feed_loading {
+    width: 100%;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+@media (min-width: 426px) {
+  .skills_container .skill_list {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
+
+@media (max-width: 425px) {
+  .skills_container .skill_list {
+    grid-template-columns: 1fr 1fr 1fr 1fr; } }
+
+@media (max-width: 375px) {
+  .skills_container .skill_list {
+    grid-template-columns: 1fr 1fr 1fr; } }
+
+@media (max-width: 320px) {
+  .skills_container .skill_list {
+    grid-template-columns: 1fr 1fr 1fr; } }
 
 .card {
-  padding: 2em;
-}
+  list-style: none; }
+  .card .flip-card_front,
+  .card .flip-card_back {
+    height: 90px;
+    border: 2px solid #237522;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px; }
+  .card .flip-card_front {
+    display: flex;
+    justify-content: center; }
+    .card .flip-card_front svg {
+      width: 74%;
+      height: auto; }
+  .card .flip-card_back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .card .flip-card_back .flip-card_title {
+      width: 100%;
+      height: 20%;
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 14px;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #37353b;
+      margin-bottom: 4px; }
+    .card .flip-card_back .flip-card_content {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .card .flip-card_back .flip-card_content svg {
+        height: 70%;
+        width: auto; }
 
-.read-the-docs {
-  color: #888;
-}
+.skills_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px; }
+  .skills_container .skills-content_title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 0 11px 0; }
+    .skills_container .skills-content_title .skills-title_text {
+      width: fit-content;
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 18px;
+      font-weight: 500;
+      color: #2b292f; }
+  .skills_container .skills_content .skill_list {
+    display: grid;
+    grid-gap: 10px; }
+
+@media (min-width: 769px) {
+  .ab-list_item {
+    border-radius: 5px; }
+    .ab-list_item:hover {
+      background-color: rgba(53, 53, 56, 0.034); } }
+
+.ab-list_item {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  padding: 15px 0;
+  cursor: pointer; }
+  .ab-list_item .container_1,
+  .ab-list_item .container_2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+  .ab-list_item .container_1 {
+    width: 30%;
+    display: flex; }
+    .ab-list_item .container_1 .ab-date {
+      display: flex;
+      align-items: center;
+      padding: 3px 0 0 11px; }
+      .ab-list_item .container_1 .ab-date svg {
+        margin-right: 5px; }
+      .ab-list_item .container_1 .ab-date .ab-date_text {
+        font-family: "Anek Malayalam", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 12px;
+        font-weight: 400;
+        color: #37353b;
+        width: 73%; }
+  .ab-list_item .container_2 {
+    width: 70%;
+    padding: 0 9px; }
+    .ab-list_item .container_2 .ab-text_container {
+      width: 100%; }
+      .ab-list_item .container_2 .ab-text_container .ab-text_item {
+        font-family: "Anek Malayalam", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 14px;
+        font-weight: 400;
+        color: #37353b; }
+    .ab-list_item .container_2 .ab-title_container .ab-text_title {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 16px;
+      font-weight: 500;
+      color: #2b292f; }
+
+.academic-background_container {
+  padding: 28px 0;
+  width: 100%; }
+  .academic-background_container .academic-background_title,
+  .academic-background_container .academic-background_content {
+    width: 100%; }
+  .academic-background_container .academic-background_title {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Anek Malayalam", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2b292f;
+    margin-bottom: 17px; }
+  .academic-background_container .academic-background_content .ab_list {
+    width: 100%;
+    padding: 0; }
+
+.btns-download-resources_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 22px 0px 0px 0; }
+  .btns-download-resources_container .btn-resources_container {
+    width: 88%;
+    display: flex;
+    justify-content: space-between; }
+    .btns-download-resources_container .btn-resources_container .resources_btn {
+      height: 100%;
+      width: 47%;
+      border: 1px solid #237522;
+      border-radius: 4px;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      padding: 5px 12px;
+      cursor: pointer; }
+      .btns-download-resources_container .btn-resources_container .resources_btn .resources-btn_icon {
+        width: 34px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8px; }
+        .btns-download-resources_container .btn-resources_container .resources_btn .resources-btn_icon svg {
+          height: 77%;
+          width: auto; }
+          .btns-download-resources_container .btn-resources_container .resources_btn .resources-btn_icon svg .st0 {
+            fill: #237522; }
+      .btns-download-resources_container .btn-resources_container .resources_btn h3 {
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-family: "Anek Malayalam", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 14px;
+        font-weight: 400;
+        color: #2b292f; }
+
+.languages_container {
+  width: 100%; }
+  .languages_container .languages_title,
+  .languages_container .languages_content {
+    width: 100%; }
+  .languages_container .languages_title {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Anek Malayalam", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2b292f;
+    margin-bottom: 17px; }
+  .languages_container .languages_content {
+    height: 30px;
+    display: flex;
+    justify-content: space-between; }
+    .languages_container .languages_content .language_item {
+      height: 100%;
+      width: 47%;
+      border: 1px solid #2b292f;
+      border-radius: 4px;
+      display: flex; }
+      .languages_container .languages_content .language_item .language-item_title,
+      .languages_container .languages_content .language_item .language-item_label {
+        height: 100%;
+        display: flex;
+        align-items: center; }
+      .languages_container .languages_content .language_item .language-item_title {
+        width: 60%;
+        padding-left: 10%; }
+        .languages_container .languages_content .language_item .language-item_title .l-item-title_text {
+          font-family: "Anek Malayalam", sans-serif;
+          font-optical-sizing: auto;
+          font-size: 14px;
+          font-weight: 500;
+          color: #37353b; }
+      .languages_container .languages_content .language_item .language-item_label {
+        width: 40%; }
+        .languages_container .languages_content .language_item .language-item_label .l-item-title_text {
+          width: 82%;
+          height: 68%;
+          background-color: #237522;
+          border-radius: 4px;
+          font-family: "Anek Malayalam", sans-serif;
+          font-optical-sizing: auto;
+          font-size: 12px;
+          font-weight: 400;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+
+.about_container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .about_container .about-text_container {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start; }
+    .about_container .about-text_container .about-text_parragraph {
+      padding: 0;
+      color: #37353b;
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px; }
+      .about_container .about-text_container .about-text_parragraph .parragraph_title {
+        font-family: "Anek Malayalam", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 16px;
+        font-weight: 500; }
+      .about_container .about-text_container .about-text_parragraph strong {
+        font-weight: 500; }
+
+@media (min-width: 426px) {
+  .projects_item {
+    flex-direction: row;
+    padding: 13px 10px 30px 10px;
+    position: relative; }
+    .projects_item .pjc_container {
+      width: 50%;
+      padding: 0 4px; }
+      .projects_item .pjc_container .pjc_image_container {
+        position: relative; }
+        .projects_item .pjc_container .pjc_image_container .pjc-hover_image {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          right: 0;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          cursor: pointer;
+          transition: background-color 0.3s ease; }
+          .projects_item .pjc_container .pjc_image_container .pjc-hover_image:hover {
+            background-color: rgba(248, 248, 248, 0.384); }
+            .projects_item .pjc_container .pjc_image_container .pjc-hover_image:hover svg {
+              display: flex;
+              transform: scale(1); }
+          .projects_item .pjc_container .pjc_image_container .pjc-hover_image svg {
+            width: 20%;
+            height: auto;
+            display: none; }
+            .projects_item .pjc_container .pjc_image_container .pjc-hover_image svg .st0 {
+              fill: #237522; }
+      .projects_item .pjc_container .pjc_description {
+        height: fit-content; } }
+
+@media (max-width: 425px) {
+  .projects_item {
+    flex-direction: column;
+    padding-bottom: 38px; }
+    .projects_item .pjc_container {
+      width: auto;
+      padding: 10px 10px 0 10px; }
+      .projects_item .pjc_container .pjc_image_container .pjc-hover_image {
+        display: none; }
+      .projects_item .pjc_container .pjc_description {
+        height: fit-content; } }
+
+@media (min-width: 426px) {
+  .detail-project-modal_container {
+    width: 360px; } }
+
+@media (max-width: 425px) {
+  .detail-project-modal_container {
+    width: 360px; } }
+
+@media (max-width: 375px) {
+  .detail-project-modal_container {
+    width: 336px; } }
+
+@media (max-width: 320px) {
+  .detail-project-modal_container {
+    width: 287px; } }
+
+.project-detail_item {
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column; }
+  .project-detail_item .title {
+    width: fit-content;
+    margin-right: 8px; }
+    .project-detail_item .title .pjc-title_text {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 14px;
+      font-weight: 500;
+      color: #2b292f;
+      width: fit-content;
+      white-space: nowrap; }
+  .project-detail_item .value .pjc-title_text {
+    font-family: "Anek Malayalam", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 400;
+    color: #37353b; }
+
+.list .value .value_list .value_item {
+  list-style-type: disc;
+  font-family: "Anek Malayalam", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #37353b;
+  padding-left: 5px; }
+
+.tag .value {
+  padding-top: 5px; }
+  .tag .value .value_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    grid-gap: 5px; }
+    .tag .value .value_list .value_item {
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      background-color: #237522;
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 14px;
+      font-weight: 400;
+      color: white;
+      padding: 2px; }
+
+.detail-project-modal_container {
+  height: 430px;
+  background-color: white;
+  border: 1px solid #237522;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .detail-project-modal_container .detail-project_content {
+    width: 93%;
+    height: 95%;
+    display: flex;
+    align-items: center; }
+    .detail-project-modal_container .detail-project_content .close_btn {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 1px solid #237522;
+      position: absolute;
+      right: 8px;
+      top: 5px;
+      cursor: pointer; }
+      .detail-project-modal_container .detail-project_content .close_btn svg .st0 {
+        fill: #237522; }
+    .detail-project-modal_container .detail-project_content .pjc-detail_loading {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .detail-project-modal_container .detail-project_content .project-detail_content {
+      width: 100%;
+      height: 90%; }
+      .detail-project-modal_container .detail-project_content .project-detail_content .project-detail_list {
+        padding-top: 10px;
+        overflow-y: scroll;
+        height: 100%;
+        padding-right: 13px; }
+        .detail-project-modal_container .detail-project_content .project-detail_content .project-detail_list::-webkit-scrollbar {
+          width: 4px; }
+
+.projects_item {
+  display: flex;
+  position: relative;
+  border: 1px solid #237522;
+  border-radius: 8px;
+  margin-bottom: 8px; }
+  .projects_item .pjc_container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .projects_item .pjc_container .pjc-title_container {
+      width: 100%; }
+      .projects_item .pjc_container .pjc-title_container .pjc_title {
+        font-family: "Anek Malayalam", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 16px;
+        font-weight: 500;
+        color: #2b292f;
+        line-height: 19px;
+        margin-bottom: 4px; }
+      .projects_item .pjc_container .pjc-title_container .pjc_subtitle {
+        font-family: "Anek Malayalam", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 14px;
+        font-weight: 400;
+        color: #37353b;
+        padding: 0px 0 12px 0; }
+    .projects_item .pjc_container .pjc_description {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 14px;
+      font-weight: 300;
+      color: #37353b;
+      margin-bottom: 4px; }
+    .projects_item .pjc_container .pjc_image_container {
+      width: 100%;
+      height: 119px;
+      background-color: #d1d1d1; }
+      .projects_item .pjc_container .pjc_image_container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .projects_item .pjc_container .pjc-tag_container {
+      margin: 11px 0; }
+      .projects_item .pjc_container .pjc-tag_container .pjc-tag_list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 4px; }
+        .projects_item .pjc_container .pjc-tag_container .pjc-tag_list .pjc-tag_item {
+          padding: 2px 5px;
+          border-radius: 4px;
+          background-color: #237522;
+          list-style: none;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: "Anek Malayalam", sans-serif;
+          font-optical-sizing: auto;
+          font-size: 14px;
+          font-weight: 400; }
+    .projects_item .pjc_container .pjc-link-btn_container {
+      position: absolute;
+      bottom: 7px;
+      right: 7px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end; }
+      .projects_item .pjc_container .pjc-link-btn_container .pjc-btn_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: transparent;
+        border: none;
+        margin-left: 4px; }
+        .projects_item .pjc_container .pjc-link-btn_container .pjc-btn_item svg {
+          width: 95%;
+          height: auto; }
+          .projects_item .pjc_container .pjc-link-btn_container .pjc-btn_item svg .st0 {
+            fill: #37353b; }
+      .projects_item .pjc_container .pjc-link-btn_container .isPrivate {
+        opacity: 0.4;
+        cursor: default; }
+
+.projects-list_container {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+.project-loading_view {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+@media (min-width: 769px) {
+  .codepen_item .codepen-item_title a:hover {
+    text-decoration: underline; } }
+
+.publication_item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  margin-bottom: 6px;
+  width: fit-content; }
+  .publication_item .publication-item_title {
+    width: fit-content; }
+    .publication_item .publication-item_title a {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 16px;
+      font-weight: 400;
+      color: #237522;
+      text-decoration: none; }
+  .publication_item .publication-item_subtitle {
+    font-family: "Anek Malayalam", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2b292f;
+    width: fit-content; }
+
+.publication_list {
+  width: 100%; }
+
+.projects-view_container {
+  width: 90%;
+  padding-top: 20px; }
+  .projects-view_container .projects_subtitle {
+    font-family: "Anek Malayalam", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2b292f; }
+  .projects-view_container .projects-label_title {
+    font-family: "Anek Malayalam", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2b292f;
+    padding: 20px 0 5px 0; }
+
+@media (min-width: 769px) {
+  .ab-list_item {
+    border-radius: 5px; }
+    .ab-list_item:hover {
+      background-color: rgba(53, 53, 56, 0.034); } }
+
+.ab-list_item {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  padding: 15px 0;
+  cursor: pointer; }
+  .ab-list_item .container_1,
+  .ab-list_item .container_2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+  .ab-list_item .container_1 {
+    width: 30%;
+    display: flex; }
+    .ab-list_item .container_1 .experience-date {
+      display: flex;
+      align-items: center;
+      padding: 3px 0 0 11px; }
+      .ab-list_item .container_1 .experience-date svg {
+        margin-right: 5px; }
+      .ab-list_item .container_1 .experience-date .experience-date_text {
+        font-family: "Anek Malayalam", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 12px;
+        font-weight: 400;
+        color: #37353b;
+        width: 73%; }
+  .ab-list_item .container_2 {
+    width: 70%;
+    padding: 0 9px; }
+    .ab-list_item .container_2 .experience-text_container {
+      width: 100%; }
+      .ab-list_item .container_2 .experience-text_container .experience-text_item {
+        font-family: "Anek Malayalam", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 14px;
+        font-weight: 400;
+        color: #37353b; }
+      .ab-list_item .container_2 .experience-text_container .experience-res_list {
+        padding-left: 5%; }
+        .ab-list_item .container_2 .experience-text_container .experience-res_list .experience-res-item {
+          list-style: disc;
+          font-family: "Anek Malayalam", sans-serif;
+          font-optical-sizing: auto;
+          font-size: 14px;
+          font-weight: 400;
+          color: #37353b; }
+    .ab-list_item .container_2 .experience-title_container .experience-text_title {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 16px;
+      font-weight: 500;
+      color: #2b292f; }
+    .ab-list_item .container_2 .experience-res-title_container .experience-res_title {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 16px;
+      font-weight: 500;
+      color: #2b292f;
+      margin: 5px 0; }
+
+.experience_container {
+  padding: 28px 0;
+  width: 90%; }
+  .experience_container .experience_title,
+  .experience_container .experience_content {
+    width: 100%; }
+  .experience_container .experience_title {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Anek Malayalam", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2b292f;
+    margin-bottom: 17px; }
+  .experience_container .experience_content .experience_list {
+    width: 100%;
+    padding: 0; }
+  .experience_container .experience_content .experience-loading_container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .experience_container .experience-footer-text_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .experience_container .experience-footer-text_container .experience-footer_text {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 16px;
+      font-weight: 400;
+      color: #37353b;
+      margin: 40px 0 20px 0;
+      text-align: center; }
+    .experience_container .experience-footer-text_container svg {
+      height: auto;
+      width: 50%; }
+
+@media (min-width: 769px) {
+  .entry_container:hover {
+    background-color: rgba(172, 172, 172, 0.151); } }
+
+.pinned_container {
+  width: fit-content;
+  padding-left: 40px;
+  margin: 0 0 15px 0; }
+  .pinned_container .pinned_content {
+    display: flex; }
+    .pinned_container .pinned_content .pinned_icon,
+    .pinned_container .pinned_content .pinned_text {
+      display: flex;
+      align-items: center; }
+    .pinned_container .pinned_content .pinned_icon {
+      justify-content: center;
+      margin-right: 8px; }
+      .pinned_container .pinned_content .pinned_icon svg .st0 {
+        fill: #37353b; }
+    .pinned_container .pinned_content .pinned_text .p_text {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 12px;
+      font-weight: 400;
+      color: #37353b; }
+
+.post-flag_content {
+  margin-right: 5px;
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  list-style: none;
+  padding: 0 2px;
+  border-radius: 4px; }
+  .post-flag_content .emoji_container,
+  .post-flag_content .flag-title_container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .post-flag_content .emoji_container {
+    width: 30px; }
+  .post-flag_content .flag-title-container {
+    width: 75%; }
+    .post-flag_content .flag-title-container .flag_title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 12px;
+      font-weight: 400; }
+
+.post-flags_container {
+  width: 100%;
+  height: 24px;
+  margin: 7px 0; }
+  .post-flags_container ul {
+    height: 100%;
+    display: flex; }
+
+.photo_container {
+  width: 100%;
+  object-fit: cover; }
+  .photo_container img {
+    width: 100%;
+    height: 100%; }
+
+.post_title {
+  width: 100%;
+  display: flex; }
+  .post_title .p_title {
+    font-family: "Anek Malayalam", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #2b292f; }
+
+.entry-content_container {
+  width: 100%;
+  margin: 4px 0; }
+  .entry-content_container .entry-text_content {
+    width: 100%;
+    font-family: "Anek Malayalam", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 400;
+    color: #37353b;
+    line-height: 20px; }
+
+.bottom-btn_container {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .bottom-btn_container .like-btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px; }
+    .bottom-btn_container .like-btn_container .like_btn {
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      border-radius: 50%;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .bottom-btn_container .like-btn_container .like_btn svg {
+        width: 90%; }
+      .bottom-btn_container .like-btn_container .like_btn .heart_filled {
+        fill: red; }
+      .bottom-btn_container .like-btn_container .like_btn .heart_stroked {
+        fill: red; }
+    .bottom-btn_container .like-btn_container .like_label {
+      width: fit-content;
+      padding: 0 4px;
+      height: fit-content;
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 12px;
+      font-weight: 400;
+      color: #37353b; }
+  .bottom-btn_container .share-btn_container .share_btn {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    cursor: pointer; }
+    .bottom-btn_container .share-btn_container .share_btn .st0 {
+      width: 45%;
+      fill: #237522; }
+
+.guest-form_container {
+  display: flex;
+  flex-direction: column;
+  transition: height 0.3s ease; }
+  .guest-form_container .guest-form_title {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #237522;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    position: relative; }
+    .guest-form_container .guest-form_title .g-form-title_text,
+    .guest-form_container .guest-form_title .g-arrow_container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .guest-form_container .guest-form_title .g-form-title_text {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 16px;
+      font-weight: 400;
+      width: 90%;
+      color: #2b292f; }
+    .guest-form_container .guest-form_title .g-arrow_container {
+      width: 10%; }
+      .guest-form_container .guest-form_title .g-arrow_container svg {
+        width: 32%;
+        height: auto; }
+        .guest-form_container .guest-form_title .g-arrow_container svg .st0 {
+          fill: #237522; }
+    .guest-form_container .guest-form_title .rotate svg {
+      transform: rotate(180deg); }
+  .guest-form_container .guest-form_content {
+    display: none;
+    height: 0;
+    justify-content: center;
+    padding: 10px 0; }
+    .guest-form_container .guest-form_content .g-form {
+      width: 95%;
+      display: flex;
+      flex-direction: column; }
+      .guest-form_container .guest-form_content .g-form .g-form-input_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px; }
+        .guest-form_container .guest-form_content .g-form .g-form-input_container .g-form_title,
+        .guest-form_container .guest-form_content .g-form .g-form-input_container .g-form_input {
+          height: fit-content;
+          font-family: "Anek Malayalam", sans-serif;
+          font-optical-sizing: auto;
+          font-size: 16px;
+          font-weight: 400; }
+        .guest-form_container .guest-form_content .g-form .g-form-input_container .g-form_title {
+          color: #2b292f;
+          margin-bottom: 5px; }
+        .guest-form_container .guest-form_content .g-form .g-form-input_container .g-form_input {
+          outline: none;
+          color: #37353b;
+          padding-left: 5px; }
+        .guest-form_container .guest-form_content .g-form .g-form-input_container .g-form_textarea {
+          width: 97% !important;
+          padding: 5px;
+          font-family: "Anek Malayalam", sans-serif;
+          font-optical-sizing: auto;
+          font-size: 16px;
+          font-weight: 400;
+          color: #37353b;
+          outline: none; }
+        .guest-form_container .guest-form_content .g-form .g-form-input_container .g-form_error {
+          font-family: "Anek Malayalam", sans-serif;
+          font-optical-sizing: auto;
+          font-size: 12px;
+          font-weight: 400;
+          color: red;
+          padding-left: 4px; }
+        .guest-form_container .guest-form_content .g-form .g-form-input_container .g-form-input_error {
+          border: 1px solid red; }
+      .guest-form_container .guest-form_content .g-form .g-form_btn-submit {
+        width: 100%;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Anek Malayalam", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+        border: none;
+        background-color: transparent;
+        border-radius: 5px;
+        background-color: #237522;
+        cursor: pointer; }
+      .guest-form_container .guest-form_content .g-form .g-form-btn-submit_lock {
+        opacity: 0.6;
+        cursor: default; }
+
+.g-form-container_open {
+  display: flex !important;
+  border: 1px solid #237522;
+  border-radius: 5px;
+  width: 100%; }
+  .g-form-container_open .guest-form_title {
+    border: none; }
+  .g-form-container_open .guest-form_content {
+    display: flex;
+    height: fit-content; }
+
+@media (min-width: 426px) {
+  .image_container {
+    width: 50px;
+    height: 50px; }
+    .image_container .avatar_container {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 23px;
+      font-weight: 400; } }
+
+@media (max-width: 425px) {
+  .image_container {
+    width: 40px;
+    height: 40px; }
+    .image_container .avatar_container {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 18px;
+      font-weight: 400; } }
+
+@media (max-width: 375px) {
+  .image_container {
+    width: 35px;
+    height: 35px; }
+    .image_container .avatar_container {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 16px;
+      font-weight: 400; } }
+
+@media (max-width: 320px) {
+  .image_container {
+    width: 30px;
+    height: 30px; }
+    .image_container .avatar_container {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 16px;
+      font-weight: 400; } }
+
+.image_container {
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  display: flex;
+  border: 1px solid #237522; }
+  .image_container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+  .image_container .avatar_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #237522;
+    background-color: #ecebea; }
+
+.image-container_loader {
+  background-color: white;
+  border: 1px solid #237522; }
+  .image-container_loader img {
+    display: none; }
+
+.img-l_false img {
+  display: flex; }
+
+.entry_container {
+  list-style: none;
+  padding: 10px 0; }
+  .entry_container .entry_content {
+    display: flex;
+    justify-content: center; }
+    .entry_container .entry_content .entry-image_container,
+    .entry_container .entry_content .post-data_container {
+      height: 100%; }
+    .entry_container .entry_content .entry-image_container {
+      width: 12%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+    .entry_container .entry_content .entry-data_container {
+      width: 78%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .entry_container .entry_content .entry-data_container .title_container,
+      .entry_container .entry_content .entry-data_container .entry-data_content {
+        width: 98%; }
+      .entry_container .entry_content .entry-data_container .title_container {
+        height: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start; }
+        .entry_container .entry_content .entry-data_container .title_container .name_container,
+        .entry_container .entry_content .entry-data_container .title_container .separator_container,
+        .entry_container .entry_content .entry-data_container .title_container .post-date_container {
+          height: 100%;
+          display: flex;
+          align-items: center; }
+        .entry_container .entry_content .entry-data_container .title_container .name_container {
+          padding-right: 4px; }
+          .entry_container .entry_content .entry-data_container .title_container .name_container .name_content {
+            font-family: "Anek Malayalam", sans-serif;
+            font-optical-sizing: auto;
+            font-size: 16px;
+            font-weight: 400;
+            color: #2b292f; }
+        .entry_container .entry_content .entry-data_container .title_container .separator_container {
+          margin-right: 4px; }
+          .entry_container .entry_content .entry-data_container .title_container .separator_container .separator_icon {
+            width: 10px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .entry_container .entry_content .entry-data_container .title_container .separator_container .separator_icon svg {
+              width: 5px;
+              height: auto; }
+              .entry_container .entry_content .entry-data_container .title_container .separator_container .separator_icon svg .st0 {
+                fill: #2b292f; }
+        .entry_container .entry_content .entry-data_container .title_container .post-date_container .date_content {
+          font-family: "Anek Malayalam", sans-serif;
+          font-optical-sizing: auto;
+          font-size: 12px;
+          font-weight: 400;
+          color: #2b292f;
+          height: 90%;
+          display: flex;
+          align-items: flex-end; }
+      .entry_container .entry_content .entry-data_container .entry-data_content {
+        display: flex;
+        flex-direction: column;
+        margin: 7px 0;
+        width: 100%; }
+
+.guestbook_container .guestbook_list {
+  padding: 0; }
+  .guestbook_container .guestbook_list .guestbook_loader {
+    width: 100%;
+    min-height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.feed_container {
+  width: 100%;
+  margin: 20px 0; }
+  .feed_container .title_container {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .feed_container .title_container ul {
+      width: 90%;
+      padding: 0;
+      display: flex;
+      justify-content: space-between; }
+      .feed_container .title_container ul .title_item {
+        list-style: none;
+        padding: 10px 19px;
+        margin-right: 9px; }
+        .feed_container .title_container ul .title_item .title_btn {
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          background-color: transparent;
+          border: none; }
+          .feed_container .title_container ul .title_item .title_btn h4 {
+            width: 100%;
+            height: 100%;
+            font-family: "Anek Malayalam", sans-serif;
+            font-optical-sizing: auto;
+            font-size: 14px;
+            font-weight: 500;
+            color: #37353b; }
+      .feed_container .title_container ul .title_selected {
+        border-bottom: 1px solid #237522; }
+  .feed_container .feed_content {
+    min-height: 100px;
+    height: fit-content;
+    display: flex;
+    justify-content: center; }
+
+.modal_container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 990;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: background-color 0.3s ease-in-out; }
+  .modal_container .modal_content {
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    background-color: transparent;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(0.8); }
+
+.modal_container.active {
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Color de fondo activo */ }
+
+.modal_container.active .modal_content {
+  transform: scale(1); }
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite; }
+
+.loader::before,
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #d65b13;
+  animation: prixClipFix 2s linear infinite; }
+
+.loader::after {
+  border-color: #237522;
+  animation: prixClipFix 2s linear infinite, rotate 0.5s linear infinite reverse;
+  inset: 6px; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0); }
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0); }
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%); }
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%); }
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0); } }
+
+@media (min-width: 476px) {
+  .app-content {
+    width: 40rem;
+    border-radius: 10px;
+    margin-top: 4%; }
+    .app-content .logo {
+      position: fixed; }
+      .app-content .logo .st0 {
+        fill: rgba(255, 255, 255, 0.35); } }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .app-content {
+    margin-top: 3.5%; }
+    .app-content .logo {
+      bottom: -28px;
+      right: -37px;
+      width: 186px;
+      height: auto; } }
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .app-content {
+    margin-top: 2.6%; }
+    .app-content .logo {
+      position: fixed;
+      bottom: -28px;
+      right: -37px;
+      width: 186px;
+      height: auto; } }
+
+@media (max-width: 768px) {
+  .app-content {
+    margin-top: 5%; } }
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .app-content {
+    margin-top: 6%; }
+    .app-content .logo {
+      position: fixed;
+      bottom: -28px;
+      right: -37px;
+      width: 147px;
+      height: auto; } }
+
+@media (max-width: 425px) {
+  .app-content {
+    width: 100%;
+    margin-top: 10%; }
+    .app-content .logo {
+      display: none; } }
+
+@media (max-width: 375px) {
+  .app-content {
+    margin-top: 11%; } }
+
+@media (max-width: 320px) {
+  .app-content {
+    margin-top: 13%; } }
+
+.app-content {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 72rem; }
+
+@media (min-width: 769px) {
+  .header_container {
+    height: 30px; }
+    .header_container .header_content {
+      width: 90%; }
+      .header_container .header_content .side-btn_container .color-mode_btn,
+      .header_container .header_content .side-btn_container .language-mode_btn {
+        height: 20px;
+        width: auto; } }
+
+@media (min-width: 476px) and (max-width: 768px) {
+  .header_container {
+    height: 32px; }
+    .header_container .header_content {
+      width: 80%; }
+      .header_container .header_content .side-btn_container .color-mode_btn,
+      .header_container .header_content .side-btn_container .language-mode_btn {
+        height: 20px;
+        width: auto; } }
+
+@media (max-width: 475px) {
+  .header_container {
+    height: 40px; }
+    .header_container .header_content {
+      width: 90%; }
+      .header_container .header_content .side-btn_container .color-mode_btn,
+      .header_container .header_content .side-btn_container .language-mode_btn {
+        height: 20px;
+        width: auto; } }
+
+@media (max-width: 320px) {
+  .header_container .header_content .side-btn_containenr .color-mode_btn,
+  .header_container .header_content .side-btn_containenr .language-mode_btn {
+    width: 20px;
+    height: auto; } }
+
+.header_container {
+  width: 100%;
+  background-color: #070a117e;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; }
+  .header_container .header_content {
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header_container .header_content .index-link_btn,
+    .header_container .header_content .side-btn_container {
+      height: 75%; }
+    .header_container .header_content .index-link_btn {
+      background-color: transparent;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }
+      .header_container .header_content .index-link_btn svg {
+        height: 100%;
+        width: auto; }
+        .header_container .header_content .index-link_btn svg .st0 {
+          fill: white; }
+    .header_container .header_content .side-btn_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: fit-content;
+      height: 100%; }
+      .header_container .header_content .side-btn_container .language-mode_btn {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer; }
+        .header_container .header_content .side-btn_container .language-mode_btn svg {
+          height: 100%;
+          width: auto; }
+          .header_container .header_content .side-btn_container .language-mode_btn svg .st0 {
+            fill: white; }
+
+@media (max-width: 425px) {
+  .banner_container {
+    border-radius: 0;
+    height: 160px; } }
+
+@media (max-width: 375px) {
+  .banner_container {
+    height: 141px; } }
+
+@media (max-width: 320px) {
+  .banner_container {
+    height: 120px; } }
+
+@media (max-width: 768px) {
+  .banner_container {
+    height: 182px; } }
+
+@media (min-width: 476px) {
+  .banner_container {
+    border-radius: 10px 10px 20px 20px; } }
+
+@media (min-width: 769px) {
+  .banner_container {
+    height: 230px; } }
+
+.banner_container {
+  width: 100%;
+  overflow: hidden; }
+  .banner_container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
