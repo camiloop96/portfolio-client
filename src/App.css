@@ -48,10 +48,10 @@
       fill: white; }
 
 /**
-    * Language Mode Button
-    * 
-    * Styles for the language mode button.
-    */
+  * Language Mode Button
+  * 
+  * Styles for the language mode button.
+  */
 .language-mode_btn {
   background-color: transparent;
   border: none;
@@ -300,6 +300,11 @@
           .contact_container .contact_content .input_container .submit_btn svg .st0 {
             fill: #237522; }
 
+/**
+  * Data Profile component
+  * 
+  * Styles for the language mode button.
+  */
 .data-profile_container {
   width: 90%; }
   .data-profile_container .profile_content-1 {

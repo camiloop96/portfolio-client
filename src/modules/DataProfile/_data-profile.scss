@@ -1,8 +1,14 @@
+// Import statements for internal components' styles
 @import "./ProfileImage/profile-image";
 @import "./LinksContainer/links-container";
 @import "./TextContainer/text-container";
 @import "./ContainerFlags/container-flags";
 @import "./ContactContainer/contact-container";
+/**
+  * Data Profile component
+  * 
+  * Styles for the language mode button.
+  */
 
 .data-profile_container {
   width: 90%;
@@ -11,7 +17,6 @@
     width: 100%;
     position: relative;
   }
-
   .profile_content-2 {
     width: fit-content;
     padding: 14px 0 0;
