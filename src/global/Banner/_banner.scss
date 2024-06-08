@@ -6,21 +6,11 @@
 /**
  * .banner_container
  *
- * This class defines the styling for the banner container.
- * It ensures that the container takes the full width of the parent element
- * and hides any overflow content.
+ * SASS module for banner component
  */
 .banner_container {
   width: 100%;
   overflow: hidden;
-
-  /**
-   * img
-   *
-   * This nested class defines the styling for the image within the banner container.
-   * It ensures that the image fills the container both in height and width,
-   * and that it covers the entire container area without distortion.
-   */
   img {
     height: 100%;
     width: 100%;
