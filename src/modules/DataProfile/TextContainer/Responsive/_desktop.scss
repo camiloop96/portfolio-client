@@ -1,0 +1,11 @@
+@media (min-width: 769px) {
+  .text_container {
+    height: 110px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .text_container {
+    height: 112px;
+  }
+}

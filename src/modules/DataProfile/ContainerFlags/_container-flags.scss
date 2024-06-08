@@ -1,0 +1,33 @@
+.flags_container {
+  width: fit-content;
+  ul {
+    display: flex;
+    .flags {
+      margin-right: 16px;
+      list-style-type: none;
+      display: flex;
+      align-items: flex-end;
+      .icon {
+        height: 100%;
+        width: 14px;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          height: auto;
+          width: 100%;
+          .st0 {
+            fill: $primary;
+          }
+        }
+      }
+      h3 {
+        @include Body-S(500);
+        height: 88%;
+        color: $font;
+        display: flex;
+      }
+    }
+  }
+}

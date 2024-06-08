@@ -1,0 +1,27 @@
+// Responsive
+@import "./Responsive/mobile";
+@import "./Responsive/tablet";
+@import "./Responsive/desktop";
+
+// Modulo SASS Texto container
+.text_container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  .text-1_container,
+  .text-2_container {
+    h3 {
+      @include Body-M;
+      color: $font;
+    }
+  }
+  .text-1_container {
+    margin-bottom: 8px;
+    display: flex;
+  }
+  .text-2_container {
+    h3 {
+      line-height: 20px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@media (min-width: 476px) {
+  .contact_container {
+    .contact_content {
+      width: 73%;
+      .calltoaction-text {
+        h4 {
+          @include Body-XS(500);
+        }
+      }
+      .nospam-text {
+        h4 {
+          @include Body-XS;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .contact_container {
+    .contact_content {
+      width: 68%;
+    }
+  }
+}

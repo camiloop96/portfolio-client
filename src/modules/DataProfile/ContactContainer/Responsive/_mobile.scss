@@ -1,0 +1,42 @@
+@media (max-width: 425px) {
+  .contact_container {
+    .contact_content {
+      width: 87%;
+      .calltoaction-text {
+        h4 {
+          @include Body-XS;
+        }
+      }
+      .nospam-text {
+        h4 {
+          @include Body-XS;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .contact_container {
+    .contact_content {
+      width: 85%;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .contact_container {
+    .contact_content {
+      width: 85%;
+      .calltoaction-text {
+        h4 {
+          @include Body-XXS;
+        }
+      }
+      .nospam-text {
+        h4 {
+          @include Body-XXS;
+        }
+      }
+    }
+  }
+}

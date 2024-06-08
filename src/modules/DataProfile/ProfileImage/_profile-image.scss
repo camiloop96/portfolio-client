@@ -1,0 +1,25 @@
+// SUBMODULES
+@import "./ModalProfileImage/modal-profile-image";
+
+// SASS MODULE
+.profile_image {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  left: 0;
+  border: 4px solid $content-backgroundColor;
+  background-color: white;
+  cursor: pointer;
+  object-fit: cover;
+  .p-i-loading_skeleton {
+    width: 100%;
+    height: 100%;
+  }
+  .profile-image_resource {
+    height: 100%;
+    width: 100%;
+  }
+}

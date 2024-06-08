@@ -1,0 +1,27 @@
+@import "./ProfileImage/profile-image";
+@import "./LinksContainer/links-container";
+@import "./TextContainer/text-container";
+@import "./ContainerFlags/container-flags";
+@import "./ContactContainer/contact-container";
+
+.data-profile_container {
+  width: 90%;
+  .profile_content-1 {
+    height: 40px;
+    width: 100%;
+    position: relative;
+  }
+
+  .profile_content-2 {
+    width: fit-content;
+    padding: 14px 0 0;
+    .name_container {
+      height: 34px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      @include Title-XXL;
+      color: $title;
+    }
+  }
+}
