@@ -1,0 +1,37 @@
+@media (min-width: 476px) {
+  .app-content {
+    width: 40rem;
+    border-radius: 10px;
+    margin-top: 4%;
+    .logo {
+      position: fixed;
+      .st0 {
+        fill: rgba(255, 255, 255, 0.35);
+      }
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .app-content {
+    margin-top: 3.5%;
+    .logo {
+      bottom: -28px;
+      right: -37px;
+      width: 186px;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .app-content {
+    margin-top: 2.6%;
+    .logo {
+      position: fixed;
+      bottom: -28px;
+      right: -37px;
+      width: 186px;
+      height: auto;
+    }
+  }
+}

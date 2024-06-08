@@ -1,0 +1,32 @@
+@media (max-width: 475px) {
+  .header_container {
+    height: 40px;
+    .header_content {
+      width: 90%;
+      .side-btn_container {
+        .color-mode_btn,
+        .language-mode_btn {
+          height: 20px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+}
+
+@media (max-width: 320px) {
+  .header_container {
+    .header_content {
+      .side-btn_containenr {
+        .color-mode_btn,
+        .language-mode_btn {
+          width: 20px;
+          height: auto;
+        }
+      }
+    }
+  }
+}

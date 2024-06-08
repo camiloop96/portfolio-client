@@ -1,0 +1,57 @@
+// Responsive
+@import "./Responsive/desktop";
+@import "./Responsive/tablet";
+@import "./Responsive/mobile";
+
+// SASS MODULE
+/**
+ * Header Container
+ * 
+ * Styles for the global header container.
+ */
+.header_container {
+  width: 100%;
+  background-color: #070a117e;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  /**
+   * Header Content
+   * 
+   * Styles for the content inside the header container.
+   */
+  .header_content {
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /**
+     * Index Link Button & Side Button Container
+     * 
+     * Styles for the index link button and side button container.
+     */
+    .index-link_btn,
+    .side-btn_container {
+      height: 75%;
+    }
+
+    /**
+     * Side Button Container
+     * 
+     * Styles for the side button container.
+     */
+    .side-btn_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: fit-content;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@media (max-width: 425px) {
+  .app-content {
+    width: 100%;
+    margin-top: 10%;
+    .logo {
+      display: none;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .app-content {
+    margin-top: 11%;
+  }
+}
+@media (max-width: 320px) {
+  .app-content {
+    margin-top: 13%;
+  }
+}

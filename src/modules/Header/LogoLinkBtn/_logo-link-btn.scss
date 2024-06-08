@@ -1,0 +1,22 @@
+/**
+     * Index Link Button
+     * 
+     * Styles for the index link button.
+     */
+
+.index-link_btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  svg {
+    height: 100%;
+    width: auto;
+    .st0 {
+      fill: white;
+    }
+  }
+}

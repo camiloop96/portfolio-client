@@ -1,0 +1,138 @@
+// Font import
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100..800&display=swap");
+
+// Font declaration
+
+// Mixin to define the font settings
+//
+// @param {number} $size - Font size in pixels
+@mixin font($size: 400) {
+  font-family: "Anek Malayalam", sans-serif;
+  font-optical-sizing: auto;
+  font-size: $size;
+}
+
+// Titles
+//
+// Mixin for Title XXL font size
+// @param {number} $style - Font weight (default: 400)
+@mixin Title-XXL($style: 400) {
+  @include font(30px);
+  font-weight: $style;
+}
+
+// Mixin for Title XL font size
+// @param {number} $style - Font weight (default: 400)
+@mixin Title-XL($style: 400) {
+  @include font(22px);
+  font-weight: $style;
+}
+
+// Mixin for Title L font size
+// @param {number} $style - Font weight (default: 400)
+@mixin Title-L($style: 400) {
+  @include font(20px);
+  font-weight: $style;
+}
+
+// Mixin for Title M font size
+// @param {number} $style - Font weight (default: 400)
+@mixin Title-M($style: 400) {
+  @include font(18px);
+  font-weight: $style;
+}
+
+// Mixin for Title S font size
+// @param {number} $style - Font weight (default: 400)
+@mixin Title-S($style: 400) {
+  @include font(16px);
+  font-weight: $style;
+}
+
+// Mixin for Title XS font size
+// @param {number} $style - Font weight (default: 400)
+@mixin Title-XS($style: 400) {
+  @include font(14px);
+  font-weight: $style;
+}
+
+// Subtitles
+//
+// Mixin for Subtitle XL font size
+// @param {number} $style - Font weight (default: 400)
+@mixin Subtitle-XL($style: 400) {
+  @include font(20px);
+  font-weight: $style;
+}
+
+// Mixin for Subtitle L font size
+// @param {number} $style - Font weight (default: 400)
+@mixin Subtitle-L($style: 400) {
+  @include font(18px);
+  font-weight: $style;
+}
+
+// Mixin for Subtitle M font size
+// @param {number} $style - Font weight (default: 400)
+@mixin Subtitle-M($style: 400) {
+  @include font(16px);
+  font-weight: $style;
+}
+
+// Mixin for Subtitle S font size
+// @param {number} $style - Font weight (default: 400)
+@mixin Subtitle-S($style: 400) {
+  @include font(14px);
+  font-weight: $style;
+}
+
+// Body
+//
+// Mixin for Body XXS font size
+// @param {number} $style - Font weight (default: 400)
+@mixin Body-XXS($style: 400) {
+  @include font(10px);
+  font-weight: $style;
+}
+
+// Mixin for Body XS font size
+// @param {number} $style - Font weight (default: 400)
+@mixin Body-XS($style: 400) {
+  @include font(12px);
+  font-weight: $style;
+}
+
+// Mixin for Body S font size
+// @param {number} $style - Font weight (default: 400)
+@mixin Body-S($style: 400) {
+  @include font(14px);
+  font-weight: $style;
+}
+
+// Mixin for Body M font size
+// @param {number} $style - Font weight (default: 400)
+@mixin Body-M($style: 400) {
+  @include font(16px);
+  font-weight: $style;
+}
+
+// Mixin for Body L font size
+// @param {number} $style - Font weight (default: 400)
+@mixin Body-L($style: 400) {
+  @include font(18px);
+  font-weight: $style;
+}
+
+// Mixin for Body XL font size
+// @param {number} $style - Font weight (default: 400)
+@mixin Body-XL($style: 400) {
+  @include font(23px);
+  font-weight: $style;
+}
+
+// Mixin for Body XXL font size
+// @param {number} $style - Font weight (default: 400)
+@mixin Body-XXL($style: 400) {
+  @include font(30px);
+  font-weight: $style;
+}

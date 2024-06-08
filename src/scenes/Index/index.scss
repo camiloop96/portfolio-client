@@ -1,0 +1,13 @@
+// Responsive
+@import "./Responsive/desktop";
+@import "./Responsive/tablet";
+@import "./Responsive/mobile";
+
+// SASS Module Container Content
+.app-content {
+  background-color: $content-backgroundColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 72rem;
+}

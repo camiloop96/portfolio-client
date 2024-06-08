@@ -1,0 +1,21 @@
+/**
+    * Language Mode Button
+    * 
+    * Styles for the language mode button.
+    */
+.language-mode_btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  svg {
+    height: 100%;
+    width: auto;
+    .st0 {
+      fill: white;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@media (min-width: 476px) and (max-width: 768px) {
+  .header_container {
+    height: 32px;
+    .header_content {
+      width: 80%;
+      .side-btn_container {
+        .color-mode_btn,
+        .language-mode_btn {
+          height: 20px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
