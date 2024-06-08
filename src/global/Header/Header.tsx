@@ -1,3 +1,7 @@
+/**
+ * @file Header.tsx
+ * @description Header component.
+ */
 import LogoLinkBtn from "@/modules/Header/LogoLinkBtn/LogoLinkBtn";
 import LanguageMode from "@/modules/Header/LanguageMode/LanguageMode";
 import { FC } from "react";
@@ -6,7 +10,7 @@ import { FC } from "react";
  * Header Component
  *
  * Global header module of the application.
- * Renders a logo and a language mode button.
+ * This component render Header
  *
  * @component
  * @example
