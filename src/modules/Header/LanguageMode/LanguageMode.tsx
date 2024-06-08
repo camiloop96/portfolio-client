@@ -1,3 +1,7 @@
+/**
+ * @file LanguageMode.tsx
+ * @description LanguageMode component.
+ */
 import English from "@/assets/icon/English";
 import Spanish from "@/assets/icon/Spanish";
 import { AppContext } from "@/context/AppContext/AppContext";
@@ -7,6 +11,9 @@ import { FC, useContext, useEffect, useState } from "react";
  * LanguageMode Component
  *
  * This component handles the language mode toggle button.
+ *
+ * @component
+ * @returns JSX.Element
  */
 const LanguageMode: FC = () => {
   // App Context
