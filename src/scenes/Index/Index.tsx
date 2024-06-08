@@ -8,6 +8,7 @@
 // import DataProfile from "@/modules/DataProfile/DataProfile";
 // import FeedContainer from "@/modules/FeedContainer/FeedContainer";
 import Banner from "@/global/Banner/Banner";
+import DataProfile from "@/modules/DataProfile/DataProfile";
 import { FC } from "react";
 
 /**
@@ -22,7 +23,7 @@ const Index: FC = () => {
       <Banner />
 
       {/* Renders the DataProfile component */}
-      {/* <DataProfile /> */}
+      <DataProfile />
 
       {/* Renders the ContactContainer component */}
       {/* <ContactContainer /> */}

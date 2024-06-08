@@ -1,0 +1,32 @@
+.modal_container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 990;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+  .modal_content {
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    background-color: transparent;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(0.8);
+  }
+}
+.modal_container.active {
+  background-color: rgba(0, 0, 0, 0.3); /* Color de fondo activo */
+}
+.modal_container.active {
+  .modal_content {
+    transform: scale(1);
+  }
+}

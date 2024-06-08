@@ -65,6 +65,331 @@
     .language-mode_btn svg .st0 {
       fill: white; }
 
+.container-profile_photo {
+  border-radius: 50%;
+  border: 3px solid white;
+  overflow: hidden;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; }
+  .container-profile_photo .modal-profile_photo {
+    width: 100%;
+    height: 100%; }
+
+.profile_image {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  left: 0;
+  border: 4px solid #fff;
+  background-color: white;
+  cursor: pointer;
+  object-fit: cover; }
+  .profile_image .p-i-loading_skeleton {
+    width: 100%;
+    height: 100%; }
+  .profile_image .profile-image_resource {
+    height: 100%;
+    width: 100%; }
+
+.links_container {
+  position: absolute;
+  top: 8px;
+  right: 0px;
+  display: flex; }
+  .links_container ul {
+    display: flex; }
+    .links_container ul .item-link {
+      width: 24px;
+      list-style: none;
+      margin-left: 8px; }
+      .links_container ul .item-link a {
+        width: 100%;
+        height: 100%;
+        display: flex; }
+        .links_container ul .item-link a svg {
+          width: 100%;
+          height: auto; }
+          .links_container ul .item-link a svg .st0 {
+            fill: #237522; }
+
+@media (max-width: 425px) {
+  .text_container {
+    height: 125px; } }
+
+@media (max-width: 375px) {
+  .text_container {
+    height: 132px; } }
+
+@media (max-width: 320px) {
+  .text_container {
+    height: 153px; } }
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .text_container {
+    height: 97px; } }
+
+@media (min-width: 769px) {
+  .text_container {
+    height: 110px; } }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .text_container {
+    height: 112px; } }
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0; }
+  .text_container .text-1_container h3,
+  .text_container .text-2_container h3 {
+    font-family: "Anek Malayalam", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #37353b; }
+  .text_container .text-1_container {
+    margin-bottom: 8px;
+    display: flex; }
+  .text_container .text-2_container h3 {
+    line-height: 20px; }
+
+.flags_container {
+  width: fit-content; }
+  .flags_container ul {
+    display: flex; }
+    .flags_container ul .flags {
+      margin-right: 16px;
+      list-style-type: none;
+      display: flex;
+      align-items: flex-end; }
+      .flags_container ul .flags .icon {
+        height: 100%;
+        width: 14px;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .flags_container ul .flags .icon svg {
+          height: auto;
+          width: 100%; }
+          .flags_container ul .flags .icon svg .st0 {
+            fill: #237522; }
+      .flags_container ul .flags h3 {
+        font-family: "Anek Malayalam", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 14px;
+        font-weight: 500;
+        height: 88%;
+        color: #37353b;
+        display: flex; }
+
+@media (max-width: 425px) {
+  .contact_container .contact_content {
+    width: 87%; }
+    .contact_container .contact_content .calltoaction-text h4 {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 12px;
+      font-weight: 400; }
+    .contact_container .contact_content .nospam-text h4 {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 12px;
+      font-weight: 400;
+      text-align: center; } }
+
+@media (max-width: 375px) {
+  .contact_container .contact_content {
+    width: 85%; } }
+
+@media (max-width: 320px) {
+  .contact_container .contact_content {
+    width: 85%; }
+    .contact_container .contact_content .calltoaction-text h4 {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 10px;
+      font-weight: 400; }
+    .contact_container .contact_content .nospam-text h4 {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 10px;
+      font-weight: 400; } }
+
+@media (min-width: 476px) {
+  .contact_container .contact_content {
+    width: 73%; }
+    .contact_container .contact_content .calltoaction-text h4 {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 12px;
+      font-weight: 500; }
+    .contact_container .contact_content .nospam-text h4 {
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 12px;
+      font-weight: 400; } }
+
+@media (min-width: 769px) {
+  .contact_container .contact_content {
+    width: 68%; } }
+
+.contact_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 0 0; }
+  .contact_container .contact_content {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: center; }
+    .contact_container .contact_content .calltoaction-text,
+    .contact_container .contact_content .nospam-text {
+      display: flex;
+      justify-content: center; }
+      .contact_container .contact_content .calltoaction-text h4,
+      .contact_container .contact_content .nospam-text h4 {
+        text-align: center;
+        width: fit-content;
+        color: #37353b; }
+    .contact_container .contact_content .calltoaction-text {
+      margin-bottom: 6px; }
+    .contact_container .contact_content .nospam-text h4 {
+      text-align: center; }
+    .contact_container .contact_content .input_container {
+      display: flex;
+      width: 100%;
+      height: 37px;
+      border-radius: 9px;
+      overflow: hidden;
+      border: 1px solid #237522;
+      margin-bottom: 6px; }
+      .contact_container .contact_content .input_container .email_input,
+      .contact_container .contact_content .input_container .submit_btn {
+        height: 100%;
+        border: none;
+        outline: none; }
+      .contact_container .contact_content .input_container .email_input {
+        width: 90%;
+        padding-left: 10px;
+        font-family: "Anek Malayalam", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 14px;
+        font-weight: 400;
+        color: #37353b; }
+      .contact_container .contact_content .input_container .submit_btn {
+        width: 10%;
+        padding: 0;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer; }
+        .contact_container .contact_content .input_container .submit_btn svg {
+          width: 50%;
+          height: auto; }
+          .contact_container .contact_content .input_container .submit_btn svg .st0 {
+            fill: #237522; }
+
+.data-profile_container {
+  width: 90%; }
+  .data-profile_container .profile_content-1 {
+    height: 40px;
+    width: 100%;
+    position: relative; }
+  .data-profile_container .profile_content-2 {
+    width: fit-content;
+    padding: 14px 0 0; }
+    .data-profile_container .profile_content-2 .name_container {
+      height: 34px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      font-family: "Anek Malayalam", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 30px;
+      font-weight: 400;
+      color: #2b292f; }
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite; }
+
+.loader::before,
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #d65b13;
+  animation: prixClipFix 2s linear infinite; }
+
+.loader::after {
+  border-color: #237522;
+  animation: prixClipFix 2s linear infinite, rotate 0.5s linear infinite reverse;
+  inset: 6px; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0); }
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0); }
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%); }
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%); }
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0); } }
+
+.modal_container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 990;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: background-color 0.3s ease-in-out; }
+  .modal_container .modal_content {
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    background-color: transparent;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(0.8); }
+
+.modal_container.active {
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Color de fondo activo */ }
+
+.modal_container.active .modal_content {
+  transform: scale(1); }
+
 @media (min-width: 476px) {
   .app-content {
     width: 40rem;
