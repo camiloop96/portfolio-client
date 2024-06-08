@@ -1,0 +1,16 @@
+/**
+ * Responsive styling for .banner_container
+ *
+ * Desktop reponsive file for Banner Container
+ */
+@media (min-width: 476px) {
+  .banner_container {
+    border-radius: 10px 10px 20px 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  .banner_container {
+    height: 230px;
+  }
+}

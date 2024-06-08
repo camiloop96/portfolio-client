@@ -1,0 +1,22 @@
+/**
+ * Responsive styling for .banner_container
+ *
+ * Mobile reponsive file for Banner Container
+ */
+@media (max-width: 425px) {
+  .banner_container {
+    border-radius: 0;
+    height: 160px;
+  }
+}
+
+@media (max-width: 375px) {
+  .banner_container {
+    height: 141px;
+  }
+}
+@media (max-width: 320px) {
+  .banner_container {
+    height: 120px;
+  }
+}

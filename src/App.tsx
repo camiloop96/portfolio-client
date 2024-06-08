@@ -5,6 +5,7 @@ import Header from "@/global/Header/Header";
 // import Index from "./scenes/Index/Index";
 import "react-loading-skeleton/dist/skeleton.css";
 import "./App.css";
+import Index from "./scenes/Index/Index";
 
 /**
  * App Component
@@ -33,7 +34,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          {/* <Route path="/" element={<Index />} /> */}
+          <Route path="/" element={<Index />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>

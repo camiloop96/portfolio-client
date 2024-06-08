@@ -47,6 +47,24 @@
     .index-link_btn svg .st0 {
       fill: white; }
 
+/**
+    * Language Mode Button
+    * 
+    * Styles for the language mode button.
+    */
+.language-mode_btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+  .language-mode_btn svg {
+    height: 100%;
+    width: auto; }
+    .language-mode_btn svg .st0 {
+      fill: white; }
+
 @media (min-width: 476px) {
   .app-content {
     width: 40rem;
@@ -191,21 +209,66 @@
       justify-content: space-between;
       align-items: center;
       width: fit-content;
-      height: 100%;
-      /**
-       * Language Mode Button
-       * 
-       * Styles for the language mode button.
-       */ }
-      .header_container .header_content .side-btn_container .language-mode_btn {
-        background-color: transparent;
-        border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer; }
-        .header_container .header_content .side-btn_container .language-mode_btn svg {
-          height: 100%;
-          width: auto; }
-          .header_container .header_content .side-btn_container .language-mode_btn svg .st0 {
-            fill: white; }
+      height: 100%; }
+
+/**
+ * Responsive styling for .banner_container
+ *
+ * Mobile reponsive file for Banner Container
+ */
+@media (max-width: 425px) {
+  .banner_container {
+    border-radius: 0;
+    height: 160px; } }
+
+@media (max-width: 375px) {
+  .banner_container {
+    height: 141px; } }
+
+@media (max-width: 320px) {
+  .banner_container {
+    height: 120px; } }
+
+/**
+ * Responsive styling for .banner_container
+ *
+ * Tablet reponsive file for Banner Container
+ */
+@media (max-width: 768px) {
+  .banner_container {
+    height: 220px; } }
+
+/**
+ * Responsive styling for .banner_container
+ *
+ * Desktop reponsive file for Banner Container
+ */
+@media (min-width: 476px) {
+  .banner_container {
+    border-radius: 10px 10px 20px 20px; } }
+
+@media (min-width: 769px) {
+  .banner_container {
+    height: 230px; } }
+
+/**
+ * .banner_container
+ *
+ * This class defines the styling for the banner container.
+ * It ensures that the container takes the full width of the parent element
+ * and hides any overflow content.
+ */
+.banner_container {
+  width: 100%;
+  overflow: hidden;
+  /**
+   * img
+   *
+   * This nested class defines the styling for the image within the banner container.
+   * It ensures that the image fills the container both in height and width,
+   * and that it covers the entire container area without distortion.
+   */ }
+  .banner_container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
