@@ -1,4 +1,4 @@
-import Send from "@/assets/svg/Send";
+import Send from "@/assets/icon/Send";
 import { RenderLanguage } from "@/utils/RenderLanguage";
 import { FC } from "react";
 

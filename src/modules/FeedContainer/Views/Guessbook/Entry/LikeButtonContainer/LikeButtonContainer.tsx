@@ -1,8 +1,8 @@
 import { FC, useState } from "react";
 import { LikeButtonContainerPropTypes } from "./LikeButtonContainerTypes";
-import HeartFilled from "../../../../../../assets/svg/HeartFilled";
-import HeartStroked from "../../../../../../assets/svg/HeartStroked";
-import Share from "../../../../../../assets/svg/Share";
+import HeartFilled from "@/assets/icon/HeartFilled";
+import HeartStroked from "@/assets/icon/HeartStroked";
+import Share from "@/assets/icon/Share";
 
 const LikeButtonContainer: FC<LikeButtonContainerPropTypes> = ({ likes }) => {
   const [liked, setLiked] = useState<boolean>(false);
