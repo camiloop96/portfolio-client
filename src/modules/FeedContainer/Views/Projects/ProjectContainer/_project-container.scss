@@ -1,0 +1,17 @@
+// SUBMODULES
+@import "./ProjectItem/project-item";
+
+// SAS MODULE
+.projects-list_container {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.project-loading_view {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

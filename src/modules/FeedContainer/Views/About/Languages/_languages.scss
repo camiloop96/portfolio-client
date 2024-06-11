@@ -1,0 +1,54 @@
+.languages_container {
+  width: 100%;
+  .languages_title,
+  .languages_content {
+    width: 100%;
+  }
+  .languages_title {
+    display: flex;
+    justify-content: flex-start;
+    @include Title-M(600);
+    color: $title;
+    margin-bottom: 17px;
+  }
+  .languages_content {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    .language_item {
+      height: 100%;
+      width: 47%;
+      border: 1px solid $title;
+      border-radius: 4px;
+      display: flex;
+      .language-item_title,
+      .language-item_label {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .language-item_title {
+        width: 60%;
+        padding-left: 10%;
+        .l-item-title_text {
+          @include Body-S(500);
+          color: $font;
+        }
+      }
+      .language-item_label {
+        width: 40%;
+        .l-item-title_text {
+          width: 82%;
+          height: 68%;
+          background-color: $primary;
+          border-radius: 4px;
+          @include Body-XS;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

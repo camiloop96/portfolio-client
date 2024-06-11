@@ -1,0 +1,8 @@
+@media (min-width: 769px) {
+  .ab-list_item {
+    border-radius: 5px;
+    &:hover {
+      background-color: rgba(53, 53, 56, 0.034);
+    }
+  }
+}

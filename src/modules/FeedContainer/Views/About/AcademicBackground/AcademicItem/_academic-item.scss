@@ -1,0 +1,53 @@
+// Responsive
+@import "./Responsive/desktop";
+@import "./Responsive/tablet";
+@import "./Responsive/mobile";
+
+// SASS MODULE
+.ab-list_item {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  padding: 15px 0;
+  cursor: pointer;
+  .container_1,
+  .container_2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container_1 {
+    width: 30%;
+    display: flex;
+    .ab-date {
+      display: flex;
+      align-items: center;
+      padding: 3px 0 0 11px;
+      svg {
+        margin-right: 5px;
+      }
+      .ab-date_text {
+        @include Body-XS;
+        color: $font;
+        width: 73%;
+      }
+    }
+  }
+  .container_2 {
+    width: 70%;
+    padding: 0 9px;
+    .ab-text_container {
+      width: 100%;
+      .ab-text_item {
+        @include Body-S;
+        color: $font;
+      }
+    }
+    .ab-title_container {
+      .ab-text_title {
+        @include Body-M(500);
+        color: $title;
+      }
+    }
+  }
+}

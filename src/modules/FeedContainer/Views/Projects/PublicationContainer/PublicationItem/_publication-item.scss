@@ -1,0 +1,26 @@
+// Responsive
+@import "./Responsive/desktop";
+@import "./Responsive/mobile";
+
+// SASS MODULE
+.publication_item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  margin-bottom: 6px;
+  width: fit-content;
+  .publication-item_title {
+    width: fit-content;
+    a {
+      @include Body-M;
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+  .publication-item_subtitle {
+    @include Body-S;
+    color: $title;
+    width: fit-content;
+  }
+}

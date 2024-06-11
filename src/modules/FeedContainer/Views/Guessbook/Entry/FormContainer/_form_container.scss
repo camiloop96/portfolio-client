@@ -1,0 +1,123 @@
+.guest-form_container {
+  display: flex;
+  flex-direction: column;
+  transition: height 0.3s ease;
+  .guest-form_title {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $primary;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    .g-form-title_text,
+    .g-arrow_container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .g-form-title_text {
+      @include Body-M;
+      width: 90%;
+      color: $title;
+    }
+    .g-arrow_container {
+      width: 10%;
+      svg {
+        width: 32%;
+        height: auto;
+        .st0 {
+          fill: $primary;
+        }
+      }
+    }
+
+    .rotate {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .guest-form_content {
+    display: none;
+    height: 0;
+    justify-content: center;
+    padding: 10px 0;
+    .g-form {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      .g-form-input_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px;
+        .g-form_title,
+        .g-form_input {
+          height: fit-content;
+          @include Body-M;
+        }
+        .g-form_title {
+          color: $title;
+          margin-bottom: 5px;
+        }
+        .g-form_input {
+          outline: none;
+          color: $font;
+          padding-left: 5px;
+        }
+        .g-form_textarea {
+          width: 97% !important;
+          padding: 5px;
+          @include Body-M;
+          color: $font;
+          outline: none;
+        }
+        .g-form_error {
+          @include Body-XS;
+          color: red;
+          padding-left: 4px;
+        }
+        .g-form-input_error {
+          border: 1px solid red;
+        }
+      }
+      .g-form_btn-submit {
+        width: 100%;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include Body-M;
+        color: white;
+        border: none;
+        background-color: transparent;
+        border-radius: 5px;
+        background-color: $primary;
+        cursor: pointer;
+      }
+      .g-form-btn-submit_lock {
+        opacity: 0.6;
+        cursor: default;
+      }
+    }
+  }
+}
+
+.g-form-container_open {
+  display: flex !important;
+  border: 1px solid $primary;
+  border-radius: 5px;
+  width: 100%;
+  .guest-form_title {
+    border: none;
+  }
+  .guest-form_content {
+    display: flex;
+    height: fit-content;
+  }
+}

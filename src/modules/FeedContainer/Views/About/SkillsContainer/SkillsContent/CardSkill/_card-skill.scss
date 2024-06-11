@@ -1,0 +1,45 @@
+.card {
+  list-style: none;
+  .flip-card_front,
+  .flip-card_back {
+    height: 90px;
+    border: 2px solid $primary;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .flip-card_front {
+    display: flex;
+    justify-content: center;
+    svg {
+      width: 74%;
+      height: auto;
+    }
+  }
+  .flip-card_back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .flip-card_title {
+      width: 100%;
+      height: 20%;
+      @include Body-S;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $font;
+      margin-bottom: 4px;
+    }
+    .flip-card_content {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        height: 70%;
+        width: auto;
+      }
+    }
+  }
+}

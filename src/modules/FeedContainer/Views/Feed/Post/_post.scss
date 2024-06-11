@@ -1,0 +1,106 @@
+// Respoonsive
+@import "./Responsive/desktop";
+@import "./Responsive/tablet";
+@import "./Responsive/mobile";
+
+// Submódulos
+@import "./Pinned/pinned-post";
+@import "./FlagsContainer/flags-container";
+@import "./Types/types";
+@import "./Title/title-container";
+@import "./PostContentContainer/post-content-container";
+@import "./LikeButtonContainer/like-button-container";
+
+.post_container {
+  list-style: none;
+  padding: 10px 0;
+  .post_content {
+    display: flex;
+    justify-content: center;
+    .profile-image_container,
+    .post-data_container {
+      height: 100%;
+    }
+    .profile-image_container {
+      width: 12%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .image_container {
+        width: 77%;
+        height: auto;
+        border-radius: 50%;
+        object-fit: cover;
+        overflow: hidden;
+        display: flex;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .post-data_container {
+      width: 78%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title_container,
+      .post-data_content {
+        width: 98%;
+      }
+      .title_container {
+        height: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        .name_container,
+        .separator_container,
+        .post-date_container {
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+        .name_container {
+          padding-right: 4px;
+          .name_content {
+            @include Body-M;
+            color: $title;
+          }
+        }
+        .separator_container {
+          margin-right: 4px;
+          .separator_icon {
+            width: 10px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+              width: 5px;
+              height: auto;
+              .st0 {
+                fill: $title;
+              }
+            }
+          }
+        }
+        .post-date_container {
+          .date_content {
+            @include Body-XS;
+            color: $title;
+            height: 90%;
+            display: flex;
+            align-items: flex-end;
+          }
+        }
+      }
+
+      .post-data_content {
+        display: flex;
+        flex-direction: column;
+        margin: 8px 0;
+        width: 100%;
+      }
+    }
+  }
+}

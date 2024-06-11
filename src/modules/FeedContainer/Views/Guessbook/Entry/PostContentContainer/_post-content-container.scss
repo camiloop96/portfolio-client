@@ -1,0 +1,10 @@
+.entry-content_container {
+  width: 100%;
+  margin: 4px 0;
+  .entry-text_content {
+    width: 100%;
+    @include Body-S;
+    color: $font;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,11 @@
+@import "./Flag/flag";
+
+.post-flags_container {
+  width: 100%;
+  height: 24px;
+  margin: 7px 0;
+  ul {
+    height: 100%;
+    display: flex;
+  }
+}

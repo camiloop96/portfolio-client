@@ -1,0 +1,57 @@
+// SASS MODULE
+.project-detail_item {
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+  .title {
+    width: fit-content;
+    margin-right: 8px;
+    .pjc-title_text {
+      @include Body-S(500);
+      color: $title;
+      width: fit-content;
+      white-space: nowrap;
+    }
+  }
+  .value {
+    .pjc-title_text {
+      @include Body-S;
+      color: $font;
+    }
+  }
+}
+
+.list {
+  .value {
+    .value_list {
+      .value_item {
+        list-style-type: disc;
+        @include Body-S;
+        color: $font;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+.tag {
+  .value {
+    padding-top: 5px;
+    .value_list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      list-style: none;
+      grid-gap: 5px;
+      .value_item {
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        background-color: $primary;
+        @include Body-S;
+        color: white;
+        padding: 2px;
+      }
+    }
+  }
+}

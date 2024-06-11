@@ -1,0 +1,11 @@
+@media (min-width: 769px) {
+  .codepen_item {
+    .codepen-item_title {
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

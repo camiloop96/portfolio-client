@@ -1,0 +1,18 @@
+// Submódulos
+@import "./ProjectContainer/project-container";
+@import "./PublicationContainer/publication-container";
+
+// SASS MODULE
+.projects-view_container {
+  width: 90%;
+  padding-top: 20px;
+  .projects_subtitle {
+    @include Subtitle-M;
+    color: $title;
+  }
+  .projects-label_title {
+    @include Subtitle-L(500);
+    color: $title;
+    padding: 20px 0 5px 0;
+  }
+}

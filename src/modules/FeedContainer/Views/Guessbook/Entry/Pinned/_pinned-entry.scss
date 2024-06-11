@@ -1,0 +1,28 @@
+.pinned_container {
+  width: fit-content;
+  padding-left: 40px;
+  margin: 0 0 15px 0;
+  .pinned_content {
+    display: flex;
+    .pinned_icon,
+    .pinned_text {
+      display: flex;
+      align-items: center;
+    }
+    .pinned_icon {
+      justify-content: center;
+      margin-right: 8px;
+      svg {
+        .st0 {
+          fill: $font;
+        }
+      }
+    }
+    .pinned_text {
+      .p_text {
+        @include Body-XS;
+        color: $font;
+      }
+    }
+  }
+}

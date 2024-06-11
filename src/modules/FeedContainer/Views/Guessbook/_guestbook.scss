@@ -1,0 +1,14 @@
+@import "./Entry/entry";
+
+.guestbook_container {
+  .guestbook_list {
+    padding: 0;
+    .guestbook_loader {
+      width: 100%;
+      min-height: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

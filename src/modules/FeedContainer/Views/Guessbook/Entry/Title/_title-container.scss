@@ -1,0 +1,8 @@
+.post_title {
+  width: 100%;
+  display: flex;
+  .p_title {
+    @include Body-L;
+    color: $title;
+  }
+}

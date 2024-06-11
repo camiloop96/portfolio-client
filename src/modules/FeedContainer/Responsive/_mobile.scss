@@ -1,0 +1,12 @@
+@media (max-width: 425px) {
+  .feed_container {
+    .title_container {
+      ul {
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+}

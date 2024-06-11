@@ -9,6 +9,7 @@
 // import FeedContainer from "@/modules/FeedContainer/FeedContainer";
 import Banner from "@/global/Banner/Banner";
 import DataProfile from "@/modules/DataProfile/DataProfile";
+import FeedContainer from "@/modules/FeedContainer/FeedContainer";
 import { FC } from "react";
 
 /**
@@ -29,7 +30,7 @@ const Index: FC = () => {
       {/* <ContactContainer /> */}
 
       {/* Renders the FeedContainer component */}
-      {/* <FeedContainer /> */}
+      <FeedContainer />
     </div>
   );
 };

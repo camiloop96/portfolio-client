@@ -1,0 +1,27 @@
+@media (max-width: 425px) {
+  .image_container {
+    width: 40px;
+    height: 40px;
+    .avatar_container {
+      @include Body-L;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .image_container {
+    width: 35px;
+    height: 35px;
+    .avatar_container {
+      @include Body-M;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .image_container {
+    width: 30px;
+    height: 30px;
+    .avatar_container {
+      @include Body-M;
+    }
+  }
+}

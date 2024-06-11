@@ -1,0 +1,31 @@
+// Submódulos
+@import "./SkillsContainer/skill-container";
+@import "./AcademicBackground/academic-background-container";
+@import "./BtnsDownloadResources/btn-download-resources";
+@import "./Languages/languages";
+
+// SASS "ABOUT" MODULE
+.about_container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .about-text_container {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    .about-text_parragraph {
+      padding: 0;
+      color: $font;
+      @include Body-M(400);
+      line-height: 30px;
+      .parragraph_title {
+        @include Title-S(500);
+      }
+      strong {
+        font-weight: 500;
+      }
+    }
+  }
+}

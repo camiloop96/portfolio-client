@@ -1,0 +1,52 @@
+.bottom-btn_container {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .like-btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    .like_btn {
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      border-radius: 50%;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        width: 90%;
+      }
+      .heart_filled {
+        fill: red;
+      }
+      .heart_stroked {
+        fill: red;
+      }
+    }
+    .like_label {
+      width: fit-content;
+      padding: 0 4px;
+      height: fit-content;
+      @include Body-XS;
+      color: $font;
+    }
+  }
+  .share-btn_container {
+    .share_btn {
+      background-color: transparent;
+      border: none;
+      display: flex;
+      cursor: pointer;
+      .st0 {
+        width: 45%;
+        fill: $primary;
+      }
+    }
+  }
+}

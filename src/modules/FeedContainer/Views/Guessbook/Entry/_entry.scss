@@ -1,0 +1,96 @@
+// Respoonsive
+@import "./Responsive/desktop";
+@import "./Responsive/tablet";
+@import "./Responsive/mobile";
+
+// Submódulos
+@import "./Pinned/pinned-entry";
+@import "./FlagsContainer/flags-container";
+@import "./Types/types";
+@import "./Title/title-container";
+@import "./PostContentContainer/post-content-container";
+@import "./LikeButtonContainer/like-button-container";
+@import "./FormContainer/form_container";
+@import "./AvatarImage/avatar-image";
+
+.entry_container {
+  list-style: none;
+  padding: 10px 0;
+  .entry_content {
+    display: flex;
+    justify-content: center;
+    .entry-image_container,
+    .post-data_container {
+      height: 100%;
+    }
+    .entry-image_container {
+      width: 12%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .entry-data_container {
+      width: 78%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title_container,
+      .entry-data_content {
+        width: 98%;
+      }
+      .title_container {
+        height: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        .name_container,
+        .separator_container,
+        .post-date_container {
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+        .name_container {
+          padding-right: 4px;
+          .name_content {
+            @include Body-M;
+            color: $title;
+          }
+        }
+        .separator_container {
+          margin-right: 4px;
+          .separator_icon {
+            width: 10px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+              width: 5px;
+              height: auto;
+              .st0 {
+                fill: $title;
+              }
+            }
+          }
+        }
+        .post-date_container {
+          .date_content {
+            @include Body-XS;
+            color: $title;
+            height: 90%;
+            display: flex;
+            align-items: flex-end;
+          }
+        }
+      }
+
+      .entry-data_content {
+        display: flex;
+        flex-direction: column;
+        margin: 7px 0;
+        width: 100%;
+      }
+    }
+  }
+}

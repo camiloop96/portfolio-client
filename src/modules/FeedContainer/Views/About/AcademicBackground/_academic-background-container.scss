@@ -1,0 +1,25 @@
+// Submódulos
+@import "./AcademicItem/academic-item";
+
+// SASS MÓDULE
+.academic-background_container {
+  padding: 28px 0;
+  width: 100%;
+  .academic-background_title,
+  .academic-background_content {
+    width: 100%;
+  }
+  .academic-background_title {
+    display: flex;
+    justify-content: flex-start;
+    @include Title-M(600);
+    color: $title;
+    margin-bottom: 17px;
+  }
+  .academic-background_content {
+    .ab_list {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@media (max-width: 425px) {
+  .skills_container {
+    .skill_list {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .skills_container {
+    .skill_list {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .skills_container {
+    .skill_list {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.post-content_container {
+  width: 100%;
+  margin: 8px 0 12px 0;
+  .post-text_content {
+    width: 100%;
+    @include Body-S;
+    color: $font;
+    line-height: 20px;
+  }
+}
