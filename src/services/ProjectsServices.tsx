@@ -35,9 +35,9 @@ export const GetProjectDetailService = async (_id: string | undefined) => {
     let URLQuery = `${projectRoutes.detail}/${_id}`;
     // Make a GET request to the project detail endpoint
     const response = await axiosInstance.get(URLQuery);
-    return response.data; // Return the data received from the API
+    return response;
   } catch (error) {
-    console.error(`Error fetching project detail for ID ${_id}:`, error); // Log any errors to the console
+    console.error(`Error fetching project detail for ID ${_id}:`, error);
     throw error; // Throw the error for handling at a higher level
   }
 };

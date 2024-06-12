@@ -7,8 +7,6 @@ export const useProjects = () => {
   const getprojectList = async () => {
     try {
       let response = await GetProjectListService();
-      console.log(response);
-
       return {
         status: response.status,
         payload: response.data,

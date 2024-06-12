@@ -26,7 +26,7 @@ const ModalDetailProject: FC<IModalDetailProjectProps> = ({ onClose, id }) => {
   const getDetailProject = async (_id: string) => {
     try {
       let response = await getProjectDetail(id);
-      if (response.status) {
+      if (response.status === 200) {
         setProjectDetail(response.payload);
       }
     } catch (error: any) {
