@@ -21,7 +21,7 @@ export const GetProjectListService = async () => {
   try {
     // Make a GET request to the project list endpoint
     const response = await axiosInstance.get(projectRoutes.list);
-    return response.data; // Return the data received from the API
+    return response; // Return the data received from the API
   } catch (error) {
     console.error("Error fetching project list:", error); // Log any errors to the console
     throw error; // Throw the error for handling at a higher level

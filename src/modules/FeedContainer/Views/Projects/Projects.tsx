@@ -1,6 +1,6 @@
 import { FC } from "react";
 import ProjectContainer from "./ProjectContainer/ProjectContainer";
-import PublicationContainer from "./PublicationContainer/PublicationContainer";
+// import PublicationContainer from "./PublicationContainer/PublicationContainer";
 import { RenderLanguage } from "@/utils/RenderLanguage";
 
 const Projects: FC = () => {
@@ -26,8 +26,8 @@ const Projects: FC = () => {
         <RenderLanguage input={projectsTitle} />
       </h2>
       <ProjectContainer />
-      <PublicationContainer type="codepen" />
-      <PublicationContainer type="article" />
+      {/* <PublicationContainer type="codepen" />
+      <PublicationContainer type="article" /> */}
     </div>
   );
 };
