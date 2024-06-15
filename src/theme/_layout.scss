@@ -1,6 +1,13 @@
-// Global Reset
-//
-// Reset all margins, paddings, and disable tap highlights and text selection
+/**
+ * file GlobalStyles.css
+ * description Global styles to reset margins, paddings, disable tap highlights and text selection, and customize scrollbars.
+ */
+
+/* Global Reset */
+
+/**
+ * Reset all margins, paddings, and disable tap highlights and text selection.
+ */
 * {
   padding: 0;
   margin: 0;
@@ -13,32 +20,45 @@
   user-select: none;
 }
 
-// Main container for the application
+/* Main container for the application */
+
+/**
+ * Main container for the application.
+ */
 .app_container {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: $backgroundColor; // Background color for the entire app
+  min-height: 100vh;
+  background-color: $backgroundColor; /* Background color for the entire app */
 }
 
 /* Page Scroll-bar */
 
-// Customization for WebKit (Chrome, Safari)
+/**
+ * Customization for WebKit (Chrome, Safari) scrollbars.
+ */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-// Track
+/**
+ * Track of the scrollbar.
+ */
 ::-webkit-scrollbar-track {
-  background: #e0e0e0; // Background color of the scrollbar track
+  background: #e0e0e0; /* Background color of the scrollbar track */
 }
 
-// Thumb (scrollbar itself)
+/**
+ * Thumb (scrollbar itself).
+ */
 ::-webkit-scrollbar-thumb {
-  background: $primary; // Color of the scrollbar thumb
+  background: $primary; /* Color of the scrollbar thumb */
 }
 
-// Handle on Hover
+/**
+ * Handle on Hover for the scrollbar.
+ */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; // Color of the scrollbar thumb on hover
+  background: #555; /* Color of the scrollbar thumb on hover */
 }

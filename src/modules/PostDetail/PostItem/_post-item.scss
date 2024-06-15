@@ -1,0 +1,13 @@
+// Responsive
+@import "./Responsive/desktop";
+@import "./Responsive/mobile";
+
+.post-item_container {
+  background-color: #e7e2e2;
+  border-radius: 18px;
+  min-height: 20rem;
+  padding: 10px 0 3px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

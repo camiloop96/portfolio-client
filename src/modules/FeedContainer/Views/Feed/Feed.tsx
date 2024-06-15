@@ -1,8 +1,8 @@
 import { FeedContext } from "@/context/FeedContext/FeedContext";
 import { FC, useContext, useEffect, useState } from "react";
-import { PostTypes } from "./Post/PostTypes";
 import Spinner from "@/modules/Spinners/Spinner";
-import Post from "./Post/Post";
+import { PostTypes } from "@/modules/Post/PostTypes";
+import Post from "@/modules/Post/Post";
 
 const Feed: FC = () => {
   // Importacion del contexto de posts
@@ -42,7 +42,7 @@ const Feed: FC = () => {
       ) : (
         <ul>
           {posts?.map((post) => (
-            <Post key={post._id} dataPost={post} />
+            <Post key={post._id} dataPost={post} typePost="feed" />
           ))}
         </ul>
       )}

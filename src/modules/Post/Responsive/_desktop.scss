@@ -1,0 +1,12 @@
+@media (min-width: 769px) {
+  .post_feed {
+    &:hover {
+      background-color: rgba(172, 172, 172, 0.301);
+    }
+  }
+  .post_detail {
+    &:hover {
+      background: transparent;
+    }
+  }
+}

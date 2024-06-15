@@ -1,5 +1,5 @@
 import { FC } from "react";
-import BtnsDownloadResources from "./BtnsDownloadResources/BtnsDownloadResources";
+// import BtnsDownloadResources from "./BtnsDownloadResources/BtnsDownloadResources";
 import { RenderLanguage } from "@/utils/RenderLanguage";
 import SkillsContainer from "./SkillsContainer/SkillsContainer";
 import AcademicBackground from "./AcademicBackground/AcademicBackground";
@@ -53,7 +53,7 @@ const About: FC = () => {
 
   return (
     <div className="about_container">
-      <BtnsDownloadResources />
+      {/* <BtnsDownloadResources /> */}
       <div className="about-text_container">
         <p className="about-text_parragraph">
           <RenderLanguage input={titleAbout} />

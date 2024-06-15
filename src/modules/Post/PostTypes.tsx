@@ -21,4 +21,5 @@ export interface PostTypes {
 
 export interface PostPropTypes {
   dataPost: PostTypes;
+  typePost: string;
 }
