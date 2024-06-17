@@ -4,7 +4,7 @@ import { FC } from "react";
 const Logo: FC = () => {
   return (
     <svg
-      className="logo"
+      className="logo-component"
       width="31"
       height="31"
       viewBox="0 0 31 31"

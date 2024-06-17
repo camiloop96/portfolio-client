@@ -6,5 +6,30 @@
     @include Body-S;
     color: $font;
     line-height: 20px;
+    display: inline;
+    .link-action {
+      margin-left: 5px;
+      display: flex;
+      width: fit-content;
+      margin: 14px 0;
+      a {
+        @include Body-S;
+        color: $primary;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        &:hover {
+          text-decoration: underline;
+        }
+        svg {
+          width: 20px;
+          height: auto;
+          margin-right: 5px;
+          .st0 {
+            fill: $primary;
+          }
+        }
+      }
+    }
   }
 }

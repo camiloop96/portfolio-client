@@ -41,7 +41,7 @@ const PostItem: FC = () => {
 
   useEffect(() => {
     getPostDetail(id!);
-  }, [id]);
+  }, []);
 
   return (
     <div className="post-item_container">

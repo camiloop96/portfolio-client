@@ -1,4 +1,5 @@
 import { MoodTypes } from "./FlagsContainer/FlagsContainerTypes";
+import { LinkPostTypes } from "./PostContentContainer/PostContentContainerTypes";
 import { PhotoPostTypes } from "./Types/PhotoPost/PhotoPostTypes";
 
 interface PostDataTypes {
@@ -17,6 +18,8 @@ export interface PostTypes {
   postData: PostDataTypes;
   createdAt: Date;
   likes: number;
+  hasLink: boolean;
+  linkInfo: LinkPostTypes;
 }
 
 export interface PostPropTypes {

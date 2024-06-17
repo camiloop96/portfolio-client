@@ -125,7 +125,8 @@ const Post: FC<PostPropTypes> = ({
   dataPost,
   typePost,
 }: PostPropTypes): JSX.Element => {
-  const { _id, isPinned, postData, likes, createdAt } = dataPost || {};
+  const { _id, isPinned, postData, likes, createdAt, hasLink, linkInfo } =
+    dataPost || {};
   const { type, photoLink, hasTitle, title, content, hasFlags, moodFlags } =
     postData || {};
 
@@ -142,7 +143,11 @@ const Post: FC<PostPropTypes> = ({
           <FlagsContainer hasFlags={hasFlags} moodFlags={moodFlags} />
           <div className="post-data_content">
             <TitleContainer hasTitle={hasTitle} title={title} />
-            <PostContentContainer content={content} />
+            <PostContentContainer
+              content={content}
+              link={linkInfo}
+              hasLink={hasLink}
+            />
             {renderPostType(type, photoLink)}
           </div>
           <PostActionsContainer likes={likes} postId={_id} type={typePost} />

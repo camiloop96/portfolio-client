@@ -10,6 +10,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 import "./App.css";
 import Index from "./scenes/Index/Index";
 import PostDetail from "./scenes/PostDetail/PostDetail";
+import Footer from "./global/Footer/Footer";
 
 /**
  * App Component
@@ -42,6 +43,7 @@ function App() {
           <Route path="/post/:id" element={<PostDetail />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

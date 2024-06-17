@@ -1,0 +1,12 @@
+@media (min-width: 426px) {
+  .social-links_container {
+    padding: 10px 0 12px 0;
+    .social-links_list {
+      .social-links_item {
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+}
