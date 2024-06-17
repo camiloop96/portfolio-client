@@ -1896,14 +1896,14 @@
 
 @media (max-width: 425px) {
   .post-detail_container {
-    margin-top: 42px; } }
+    margin-top: 42px;
+    padding: 4px 0 0 0; } }
 
 .post-detail_container {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 39px 0 0 0; }
+  align-items: center; }
 
 @media (min-width: 769px) {
   .header_container {
