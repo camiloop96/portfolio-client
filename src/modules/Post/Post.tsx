@@ -121,7 +121,10 @@ const PostHeader: FC<{ createdAt: Date; language: string }> = ({
  * @param {PostPropTypes} props - The props for the Post component.
  * @returns {JSX.Element} The rendered Post component.
  */
-const Post: FC<PostPropTypes> = ({ dataPost, typePost }) => {
+const Post: FC<PostPropTypes> = ({
+  dataPost,
+  typePost,
+}: PostPropTypes): JSX.Element => {
   const { _id, isPinned, postData, likes, createdAt } = dataPost || {};
   const { type, photoLink, hasTitle, title, content, hasFlags, moodFlags } =
     postData || {};
