@@ -1899,6 +1899,11 @@
     margin-top: 42px;
     padding: 4px 0 0 0; } }
 
+@media (min-width: 426px) {
+  .post-detail_container {
+    margin-top: 42px;
+    padding: 39px 0 0 0; } }
+
 .post-detail_container {
   width: 100%;
   display: flex;
