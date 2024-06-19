@@ -1,17 +1,29 @@
+/**
+ * @file ContactContainer.tsx
+ * @description This component renders a contact form for subscribing to updates about projects and code tips, with multilingual support.
+ */
+
 import Send from "@/assets/icon/Send";
 import { RenderLanguage } from "@/utils/RenderLanguage";
 import { FC } from "react";
 
-const ContactContainer: FC = () => {
+/**
+ * @component
+ * @name ContactContainer
+ * @description Functional component that renders a contact form with multilingual support for subscribing to updates.
+ * @returns {JSX.Element} A contact form with an input field for email and a submit button.
+ */
+const ContactContainer: FC = (): JSX.Element => {
   const text1 = {
     english: "¡Be the first to know about my latest projects and code tips!",
     spanish:
       "¡Sé el primero en conocer mis últimos proyectos y tips de desarrollo!",
   };
   const noSpam = {
-    english: "Don’t worry, no spam. Unsuscribe anytime.",
+    english: "Don’t worry, no spam. Unsubscribe anytime.",
     spanish: "No te preocupes, no es spam. Des-suscríbete cuando quieras.",
   };
+
   return (
     <div className="contact_container">
       <div className="contact_content">

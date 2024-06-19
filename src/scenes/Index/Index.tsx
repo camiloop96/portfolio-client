@@ -6,6 +6,7 @@
  */
 
 import Banner from "@/global/Banner/Banner";
+import ContactContainer from "@/modules/DataProfile/ContactContainer/ContactContainer";
 import DataProfile from "@/modules/DataProfile/DataProfile";
 import FeedContainer from "@/modules/FeedContainer/FeedContainer";
 import { FC } from "react";
@@ -26,7 +27,7 @@ const Index: FC = () => {
         <DataProfile />
 
         {/* Renders the ContactContainer component */}
-        {/* <ContactContainer /> */}
+        <ContactContainer />
 
         {/* Renders the FeedContainer component */}
         <FeedContainer />

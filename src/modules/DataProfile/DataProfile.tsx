@@ -34,11 +34,9 @@ const DataProfile = () => {
       {/* User name and text container */}
       <div className="profile_content-2">
         <div className="name_container">{userName}</div>
+        <ContainerFlags />
         <TextContainer />
       </div>
-
-      {/* Container flags */}
-      <ContainerFlags />
     </div>
   );
 };
