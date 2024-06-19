@@ -1,4 +1,6 @@
+/* Media query for screens with a maximum width of 425 pixels */
 @media (max-width: 425px) {
+  /* Styling for the element with class 'post-detail_container' */
   .post-detail_container {
     margin-top: 42px;
     padding: 4px 0 0 0;

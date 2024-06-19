@@ -1894,7 +1894,9 @@
   align-items: center;
   min-height: 72rem; }
 
+/* Media query for screens with a maximum width of 425 pixels */
 @media (max-width: 425px) {
+  /* Styling for the element with class 'post-detail_container' */
   .post-detail_container {
     margin-top: 42px;
     padding: 4px 0 0 0; } }
@@ -2069,7 +2071,8 @@
     margin-bottom: 6px;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    gap: 4px; }
     .social-links_container .social-links_list .social-links_item {
       list-style: none;
       width: 35px;
@@ -2082,7 +2085,7 @@
         justify-content: center;
         align-items: center; }
         .social-links_container .social-links_list .social-links_item .social-links_link svg {
-          width: 65%;
+          width: 70%;
           height: auto; }
           .social-links_container .social-links_list .social-links_item .social-links_link svg .st0 {
             fill: white; }

@@ -5,6 +5,7 @@
 
 import Github from "@/assets/social/Github";
 import Linkedin from "@/assets/social/Linkedin";
+import Youtube from "@/assets/social/Youtube";
 import { FC } from "react";
 import { v4 as uuidv4 } from "uuid";
 
@@ -16,10 +17,12 @@ import { v4 as uuidv4 } from "uuid";
  * @returns {JSX.Element} The rendered Footer component.
  */
 const Footer: FC = (): JSX.Element => {
-  const { VITE_LINK_GITHUB, VITE_LINK_LINKEDIN } = import.meta.env;
+  const { VITE_LINK_GITHUB, VITE_LINK_LINKEDIN, VITE_LINK_YOUTUBE } =
+    import.meta.env;
   const socialLinks = [
     { _id: uuidv4(), icon: <Github />, to: VITE_LINK_GITHUB },
     { _id: uuidv4(), icon: <Linkedin />, to: VITE_LINK_LINKEDIN },
+    { _id: uuidv4(), icon: <Youtube />, to: VITE_LINK_YOUTUBE },
   ];
   // Copyright message
   const copyrightMessage = `Camilo Polania 2024®`;
