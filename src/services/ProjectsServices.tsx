@@ -12,32 +12,45 @@ const axiosInstance = axios.create({ baseURL });
 
 // Routes for project API endpoints
 let projectRoutes = {
-  list: "/projects/list", // Route to get the list of projects
-  detail: "/projects/detail", // Route to get the detail of a project
+  list: "/projects/list",
+  detail: "/projects/detail",
+  images: "/projects/get/images",
 };
 
 // Service function to get the list of projects
-export const GetProjectListService = async () => {
+export const GetProjectListService = async (category: string) => {
   try {
     // Make a GET request to the project list endpoint
-    const response = await axiosInstance.get(projectRoutes.list);
-    return response; // Return the data received from the API
+    const response = await axiosInstance.get(
+      `${projectRoutes.list}/${category}`
+    );
+    return response;
   } catch (error) {
-    console.error("Error fetching project list:", error); // Log any errors to the console
-    throw error; // Throw the error for handling at a higher level
+    console.error("Error fetching project list:", error);
+    throw error;
   }
 };
 
 // Service function to get the detail of a project by ID
 export const GetProjectDetailService = async (_id: string | undefined) => {
   try {
-    // Construct the URL for fetching project detail by ID
     let URLQuery = `${projectRoutes.detail}/${_id}`;
-    // Make a GET request to the project detail endpoint
     const response = await axiosInstance.get(URLQuery);
     return response;
   } catch (error) {
     console.error(`Error fetching project detail for ID ${_id}:`, error);
-    throw error; // Throw the error for handling at a higher level
+    throw error;
+  }
+};
+
+// Service function to get the detail of a project by ID
+export const GetProjectImagesService = async (_id: string | undefined) => {
+  try {
+    let URLQuery = `${projectRoutes.images}/${_id}`;
+    const response = await axiosInstance.get(URLQuery);
+    return response;
+  } catch (error) {
+    console.error(`Error fetching project detail for ID ${_id}:`, error);
+    throw error;
   }
 };

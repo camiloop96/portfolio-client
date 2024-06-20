@@ -1,0 +1,25 @@
+// Responsive
+@import "./Responsive/desktop";
+@import "./Responsive/tablet";
+@import "./Responsive/mobile";
+
+.project-images_slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 67rem;
+  min-height: 10rem;
+  border-radius: 10px;
+  //   height: auto;
+  .project_slider {
+    width: 100%;
+    height: 100%;
+    .project-images_container {
+      object-fit: cover;
+      .project-images_item {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

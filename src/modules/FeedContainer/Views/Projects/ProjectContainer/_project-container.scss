@@ -2,6 +2,11 @@
 @import "./ProjectItem/project-item";
 
 // SAS MODULE
+.projects-label_title {
+  @include Subtitle-L(500);
+  color: $title;
+  padding: 20px 0 5px 0;
+}
 .projects-list_container {
   margin: 10px 0;
   display: flex;

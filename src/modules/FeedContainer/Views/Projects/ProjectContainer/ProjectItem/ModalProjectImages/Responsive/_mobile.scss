@@ -1,0 +1,15 @@
+@media (max-width: 320px) {
+  .project-images_slider {
+    width: 16rem;
+  }
+}
+@media (min-width: 321px) and(max-width: 375px) {
+  .project-images_slider {
+    width: 20rem;
+  }
+}
+@media (min-width: 376px) and(max-width: 425px) {
+  .project-images_slider {
+    width: 22rem;
+  }
+}

@@ -11,21 +11,23 @@ const Projects: FC = () => {
       "Distruto los nuevos retos, es por eso que en cada proyecto dejo una parte de mi. Este es un listado de proyectos que he realizado 💪",
   };
 
-  // Titulo de proyectos
-  const projectsTitle = {
-    english: "Proyectos",
-    spanish: "Projects",
-  };
-
   return (
     <div className="projects-view_container">
       <h2 className="projects_subtitle">
         <RenderLanguage input={welcomeMessage} />
       </h2>
-      <h2 className="projects-label_title">
-        <RenderLanguage input={projectsTitle} />
-      </h2>
-      <ProjectContainer />
+
+      <ProjectContainer
+        category="blog"
+        title={{ english: "Blogs", spanish: "Blogs" }}
+      />
+      <ProjectContainer
+        category="dashboard"
+        title={{
+          english: "Corporative Dashboards",
+          spanish: "Dashboards corporativos",
+        }}
+      />
       {/* <PublicationContainer type="codepen" />
       <PublicationContainer type="article" /> */}
     </div>

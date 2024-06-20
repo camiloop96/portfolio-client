@@ -1,3 +1,8 @@
+/**
+ * @file ProjectContainer.tsx
+ * @description This component manages the state and UI for displaying a list of projects. It includes fetching project data, handling loading states, and displaying project details in a modal.
+ */
+
 import { useProjects } from "@/hooks/useProjects/useProjects";
 import Spinner from "@/modules/Spinners/Spinner";
 import { showErrorNotification } from "@/utils/notificationManager";
@@ -5,45 +10,66 @@ import { FC, useEffect, useState } from "react";
 import ProjectItem from "./ProjectItem/ProjectItem";
 import Modal from "@/modules/Modal/Modal";
 import ModalDetailProject from "./ProjectItem/ModalDetail/ModalDetailProject";
+import ModalProjectImages from "./ProjectItem/ModalProjectImages/ModalProjectImages";
+import { RenderLanguage } from "@/utils/RenderLanguage";
 
 interface IProjectItem {
   _id: string;
 }
 
-const ProjectContainer: FC = () => {
-  // Id del proyecto
+/**
+ * @component
+ * @name ProjectContainer
+ * @description Functional component that renders a list of projects and handles the state for displaying a loading spinner and a modal with project details.
+ * @returns {JSX.Element} A container with a list of project items and a modal for project details.
+ */
+
+interface IProjectContainerProps {
+  category: string;
+  title: {
+    english: string;
+    spanish: string;
+  };
+}
+const ProjectContainer: FC<IProjectContainerProps> = ({
+  category,
+  title,
+}): JSX.Element => {
+  // Id of the project
   const [projectiD, setProjectID] = useState<string | undefined>();
 
-  // Estado que maneja el modal
+  // State that manages the modal
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  // Manejadores del model
+  // Modal handlers
   const handleModalOpen = (
     e: React.MouseEvent<HTMLButtonElement>,
     _id: string
   ) => {
     e.preventDefault();
+    e.stopPropagation();
     setIsOpen(true);
     setProjectID(_id);
   };
 
   const handleModalClose = (e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
+    e.stopPropagation();
     setProjectID(undefined);
     setIsOpen(false);
   };
 
-  // Lista de proyectos
-  let [projectList, setProjectList] = useState<IProjectItem[]>([]);
-  let [loadingProject, setLoadingProject] = useState<boolean>(true);
+  // List of projects
+  const [projectList, setProjectList] = useState<IProjectItem[]>([]);
+  const [loadingProject, setLoadingProject] = useState<boolean>(true);
 
-  // Obtencion de proyectos
+  // Fetching projects
   const { getprojectList } = useProjects();
 
-  // Manejador del evento
-  const handleGetProjectList = async () => {
+  // Event handler
+  const handleGetProjectList = async (category: string) => {
     try {
-      let response = await getprojectList();
+      const response = await getprojectList(category);
       if (response.status === 200) {
         setProjectList(response.payload);
       }
@@ -54,11 +80,30 @@ const ProjectContainer: FC = () => {
     }
   };
 
-  // Efecto de carga de proyectos
+  // Effect for loading projects
   useEffect(() => {
-    handleGetProjectList();
+    handleGetProjectList(category);
   }, []);
 
+  // Modal images
+  const [isOpenModalImages, setIsOpenModalImages] = useState<boolean>(false);
+
+  const handleOpenProjectImages = (
+    e: React.MouseEvent<HTMLButtonElement>,
+    _id: string
+  ) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsOpenModalImages(true);
+    setProjectID(_id);
+  };
+
+  const handleCloseModalImages = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setProjectID(undefined);
+    setIsOpenModalImages(false);
+  };
   return (
     <>
       {loadingProject ? (
@@ -66,14 +111,27 @@ const ProjectContainer: FC = () => {
           <Spinner />
         </div>
       ) : (
-        <ul className="projects-list_container">
-          {projectList.map((item) => (
-            <ProjectItem key={item._id} item={item} onOpen={handleModalOpen} />
-          ))}
-        </ul>
+        <>
+          <h2 className="projects-label_title">
+            <RenderLanguage input={title} />
+          </h2>
+          <ul className="projects-list_container">
+            {projectList.map((item) => (
+              <ProjectItem
+                key={item._id}
+                item={item}
+                onOpen={handleModalOpen}
+                onOpenImages={handleOpenProjectImages}
+              />
+            ))}
+          </ul>
+        </>
       )}
       <Modal isOpen={isOpen} onClose={handleModalClose}>
         <ModalDetailProject onClose={handleModalClose} id={projectiD} />
+      </Modal>
+      <Modal isOpen={isOpenModalImages} onClose={handleCloseModalImages}>
+        <ModalProjectImages id={projectiD} />
       </Modal>
     </>
   );

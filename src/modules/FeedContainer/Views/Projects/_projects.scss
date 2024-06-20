@@ -10,9 +10,4 @@
     @include Subtitle-M;
     color: $title;
   }
-  .projects-label_title {
-    @include Subtitle-L(500);
-    color: $title;
-    padding: 20px 0 5px 0;
-  }
 }

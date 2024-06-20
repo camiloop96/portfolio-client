@@ -17,8 +17,6 @@ const ModalDetailProject: FC<IModalDetailProjectProps> = ({ onClose, id }) => {
   // Data del proyecto
   const [projectDetail, setProjectDetail] = useState<any | {}>({});
 
-  console.log(projectDetail);
-
   // Hook de detalle de producto
   const { getProjectDetail } = useProjects();
 
