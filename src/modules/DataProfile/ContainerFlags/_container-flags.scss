@@ -18,14 +18,14 @@
           height: auto;
           width: 100%;
           .st0 {
-            fill: $primary;
+            fill: #77737e;
           }
         }
       }
       h3 {
         @include Body-S(500);
         height: 88%;
-        color: $font;
+        color: #77737e;
         display: flex;
       }
     }
