@@ -35,7 +35,6 @@ export const useForm = ({
   ) => {
     e.preventDefault();
     const { name, value } = e.target;
-    console.log(name, value);
 
     setForm({
       ...form,

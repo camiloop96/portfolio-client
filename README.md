@@ -4,7 +4,7 @@
 
 Welcome to my web Fullstack Developer Portfolio! This project showcases my skills and expertise in building responsive, user-friendly web applications using ReactJS, SASS, NodeJS and a lot of technologies thats makes this proyect amazing!.
 
-![Portfolio Screenshot](screenshot.png)
+![Portfolio Screenshot](screenshots/portfolio_2.webp)
 
 ## 🚀 Project Overview
 
@@ -30,7 +30,7 @@ This portfolio is a comprehensive showcase of my work as a Fullstack Developer. 
 
 ## 📸 Screenshots
 
-![Home Page](screenshots/home.png)
+![Home Page](screenshots/portfolio_2.webp)
 ![Projects Page](screenshots/projects.png)
 ![Contact Page](screenshots/contact.png)
 

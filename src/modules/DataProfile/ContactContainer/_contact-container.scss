@@ -59,6 +59,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        .loader {
+          width: 27px !important;
+          height: 27px !important;
+        }
         cursor: pointer;
         svg {
           width: 50%;
@@ -70,4 +74,8 @@
       }
     }
   }
+}
+
+.email-input_error {
+  border: 1px solid red !important;
 }

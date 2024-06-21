@@ -334,11 +334,17 @@
         justify-content: center;
         align-items: center;
         cursor: pointer; }
+        .contact_container .contact_content .input_container .submit_btn .loader {
+          width: 27px !important;
+          height: 27px !important; }
         .contact_container .contact_content .input_container .submit_btn svg {
           width: 50%;
           height: auto; }
           .contact_container .contact_content .input_container .submit_btn svg .st0 {
             fill: #237522; }
+
+.email-input_error {
+  border: 1px solid red !important; }
 
 /**
   * Data Profile component
