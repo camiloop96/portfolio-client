@@ -571,7 +571,8 @@
         width: 73%; }
   .ab-list_item .container_2 {
     width: 70%;
-    padding: 0 9px; }
+    padding: 0 9px;
+    gap: 4px; }
     .ab-list_item .container_2 .ab-text_container {
       width: 100%; }
       .ab-list_item .container_2 .ab-text_container .ab-text_item {

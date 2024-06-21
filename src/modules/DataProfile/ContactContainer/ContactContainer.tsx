@@ -60,11 +60,11 @@ const ContactContainer: FC = (): JSX.Element => {
   // Submit handler
   const handleSubmit = async () => {
     try {
-      setLoading(true);
       if (errors.email === "email_invalid") {
         throw new Error("Debes ingresar un email válido");
       }
 
+      setLoading(true);
       const response = await RegisterEmailService(form);
       if (response.status === 201) {
         showSuccessNotification(
@@ -104,7 +104,11 @@ const ContactContainer: FC = (): JSX.Element => {
             value={form.email}
             autoComplete="off"
           />
-          <button className="submit_btn" onClick={handleSubmit}>
+          <button
+            className="submit_btn"
+            onClick={handleSubmit}
+            disabled={Object.keys(form.email).length === 0}
+          >
             {loading ? <Spinner /> : <Send />}
           </button>
         </div>
